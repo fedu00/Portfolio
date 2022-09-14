@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
+
+* {
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  color: antiquewhite;
+}
+
+.websiteContainer {
+  background-color: #282c50;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contentContainer {
+  flex-grow: 1;
+}

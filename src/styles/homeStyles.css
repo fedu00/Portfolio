@@ -1,0 +1,26 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.homeContainer div {
+  width: 500px;
+  font-size: 24px;
+  margin: 16px;
+}
+
+.welcomeSection {
+  color: #d93aac;
+}
+
+.aboutMeSection {
+  color: orange;
+}
+
+.paragraphContainer {
+  margin: 16px;
+  color: antiquewhite;
+}
