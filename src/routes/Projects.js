@@ -1,8 +1,20 @@
+import Project from "../components/Project";
+import "../styles/projectsStyles.css";
+
 const Projects = () => {
   return (
-    <>
-      <p>projekty</p>
-    </>
+    <div className="projectsSection">
+      <div className="projectsContainer">
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+      </div>
+    </div>
   );
 };
 

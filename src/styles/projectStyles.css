@@ -1,0 +1,6 @@
+.projectComponentContainer {
+  border: 1px solid green;
+  width: 250px;
+  height: 250px;
+  margin: 16px;
+}

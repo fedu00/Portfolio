@@ -1,0 +1,17 @@
+.projectsSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectsContainer {
+  box-sizing: border-box;
+  border: 1px solid orange;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
