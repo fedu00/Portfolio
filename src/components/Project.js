@@ -1,9 +1,13 @@
 import "../styles/projectStyles.css";
 
-const Project = () => {
+const Project = ({ image, title, handleOpenProjects }) => {
   return (
-    <div className="projectComponentContainer">
-      <p>blablabla</p>
+    <div
+      className="projectComponentContainer"
+      style={{ backgroundImage: `url(${image})` }}
+      onClick={() => handleOpenProjects(title)}
+    >
+      <h1 className="project-title">{title}</h1>
     </div>
   );
 };

@@ -1,6 +1,25 @@
 .projectComponentContainer {
-  border: 1px solid green;
-  width: 250px;
-  height: 250px;
-  margin: 16px;
+  width: 420px;
+  height: 200px;
+  margin: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.project-title {
+  color: rgb(241, 233, 210);
+  border: 1px solid rgb(241, 233, 210);
+  background-color: rgba(104, 104, 104, 0.5);
+  padding: 4px 8px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.projectComponentContainer:hover h1 {
+  /* transform: rotate(20deg); */
+  opacity: 1;
 }
