@@ -1,22 +1,24 @@
-import "../styles/aboutStyles.css";
-import "./../styles/homeStyles.css";
+import "./../styles/globalStyles.css";
 import myPicture from "../assetes/pictures/aboutMyPicture.png";
 
 const About = () => {
   return (
-    <div className="about-section">
+    <div className="main-section">
       <div className="about-container">
         <div
-          className="backgroun-about"
+          className="image-backgroun-about"
           style={{ backgroundImage: `url(${myPicture})` }}
         ></div>
-        <div className="content-about">
-          &lt;h1&gt;
-          <h1>Wojtek</h1>
-          &lt;/h1&gt;
-          <div className="paragraphContainer">
+        <div>
+          <div className="pink text-wraper">
+            &lt;h2&gt;
+            <h2 className="text">Wojtek</h2>
+            &lt;/h2&gt;
+          </div>
+
+          <div className="orange about-text-wrapper">
             &lt;p&gt;
-            <p className="paragraph">
+            <p className="text">
               Jestem 28-latkiem, który odnalazł się w roli programisty. Zacząłem
               od Frontendu ponieważ od dzieciaka zajmowałem się rysowaniem i
               często zwracam uwagę na wizualne aspekty, w zasadzie wszystkiego

@@ -1,5 +1,5 @@
 import Project from "../components/Project";
-import "../styles/projectsStyles.css";
+import "../styles/globalStyles.css";
 import lego from "../assetes/pictures/lego.png";
 import car from "../assetes/pictures/car.png";
 import forest from "../assetes/pictures/forest.png";
@@ -42,8 +42,8 @@ const Projects = () => {
     },
   };
   return (
-    <div className="projectsSection">
-      <div className="projectsContainer">
+    <div className="main-section">
+      <div className="projects-container">
         <Project
           image={lego}
           title={obiekt.lego.title}
