@@ -1,0 +1,26 @@
+.about-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-container {
+  display: flex;
+}
+
+.backgroun-about {
+  height: 700px;
+  width: 480px;
+  background-size: cover;
+}
+
+.content-about {
+  /* box-sizing: border-box; */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph {
+  width: 500px;
+}
