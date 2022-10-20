@@ -1,4 +1,4 @@
-import "../styles/projectsStyles.css";
+import "../styles/projectDetailsStyles.css";
 
 const ProjectDetails = ({ text, setShow, image }) => {
   return (

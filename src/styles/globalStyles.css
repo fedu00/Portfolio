@@ -1,0 +1,42 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 80vw;
+}
+
+.projects-container {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.text-wraper {
+  width: 500px;
+  font-size: 24px;
+  margin: 16px;
+}
+
+.about-text-wrapper {
+  width: 500px;
+  font-size: 20px;
+  margin: 16px;
+}
+
+.text {
+  margin: 16px;
+  color: antiquewhite;
+}
+
+.pink {
+  color: #d93aac;
+}
+
+.orange {
+  color: orange;
+}
