@@ -20,6 +20,5 @@
 }
 
 .projectComponentContainer:hover h1 {
-  /* transform: rotate(20deg); */
   opacity: 1;
 }
