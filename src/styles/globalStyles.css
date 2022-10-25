@@ -28,6 +28,16 @@
   margin: 16px;
 }
 
+.image-backgroun-about {
+  height: 700px;
+  width: 450px;
+  background-size: cover;
+}
+
+.about-container {
+  display: flex;
+}
+
 .text {
   margin: 16px;
   color: antiquewhite;
