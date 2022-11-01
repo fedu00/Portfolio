@@ -50,3 +50,45 @@
 .orange {
   color: orange;
 }
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 600px;
+}
+
+.form-field label {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.form-field input,
+textarea {
+  border: 1px solid antiquewhite;
+  color: antiquewhite;
+  background-color: rgba(1, 1, 1, 0);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.form-field textarea {
+  resize: none;
+  height: 100px;
+}
+
+.input-submit {
+  background-color: rgba(1, 1, 1, 0);
+  color: antiquewhite;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid antiquewhite;
+}
+
+.contact-ikon {
+  cursor: pointer;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
