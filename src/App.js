@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
 import Projects from "./routes/Projects";
+import Footer from "./components/Footer";
 
 import "./styles/appStyles.css";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }
