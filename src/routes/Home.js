@@ -17,8 +17,8 @@ const HomePage = () => {
           &lt;p&gt;
           <p className="text">
             Jestem programistą z rocznym doświadczeniem jako frontend developer.
-            po wiecej szczegułów zapraszam do swojego githuba a jeśli ciekawi
-            cię kim jestem to też przygotowałem na ten temat artykuł.
+            Zajmuje się tworzeniem oprogramowania web front-endu i aplikacji
+            mobilnych z wykorzystaniem biblioteki React i ReactNative.
           </p>
           &lt;/p&gt;
         </div>

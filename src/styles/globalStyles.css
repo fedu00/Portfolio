@@ -92,3 +92,10 @@ textarea {
   margin-top: 20px;
   margin-right: 30px;
 }
+
+.contact-text {
+  width: 800px;
+  color: antiquewhite;
+  font-size: 24px;
+  margin-bottom: 20px;
+}

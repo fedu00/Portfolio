@@ -21,16 +21,14 @@ const About = () => {
             <div className="orange about-text-wrapper">
               &lt;p&gt;
               <p className="text">
-                Jestem 28-latkiem, który odnalazł się w roli programisty.
-                Zacząłem od Frontendu ponieważ od dzieciaka zajmowałem się
-                rysowaniem i często zwracam uwagę na wizualne aspekty, w
-                zasadzie wszystkiego więc to był decydujący czynnik od czego
-                zacząć programowanie. Oprócz programowania i rysowania mam masę
-                zainteresowań, gram w gry komputerowe, choduje rośliny uwielbiam
-                zwierzęta i jak mam tylko okazje to zawsze poświęcę im uwagę,
-                skończyłem szkołę sportową i fizjoterapię więc sport był u mnie
-                zawsze. Lubię również motoryzację od lat ją śledzę i szukam
-                swojego wymarzonego auta.
+                W wieku 26 lat zacząłem swoją naukę programowania. Postawiłem na
+                front-end, ponieważ od zawsze zajmowałem się
+                malowaniem/rysowaniem i zwracam uwagę na wizualne aspekty. Teraz
+                po 2 latach nauki w tym ponad rok pracy komercyjnej świetnie się
+                odnajduję, tworząc projekty z wykorzystaniem bibliotek React
+                owych oraz rozpocząłem naukę animacji. Oprócz programowania
+                często oglądam filmy motoryzacyjne i szukam wymarzonego auta,
+                wyjdę poćwiczyć lub zanurzę się w grę, lub serial.
               </p>
               &lt;/p&gt;
             </div>
