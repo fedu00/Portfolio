@@ -30,6 +30,12 @@ const Contact = () => {
   return (
     <AnimateSection>
       <div className="main-section">
+        <div>
+          <p className="contact-text">
+            Moja poczta jest zawsze otwarta, jeśli chcesz o coś zapytać lub
+            wysłać wiadomość to śmiało!
+          </p>
+        </div>
         <form onSubmit={sendEmail}>
           <div className="form-field">
             <label>Imię</label>
