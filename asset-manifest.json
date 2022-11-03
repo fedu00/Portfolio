@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wojtekfedak.portfolio/static/css/main.0c25c7c1.css",
+    "main.js": "/wojtekfedak.portfolio/static/js/main.1d3f6eb5.js",
+    "static/js/787.28cb0dcd.chunk.js": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/aboutMyPicture.png": "/wojtekfedak.portfolio/static/media/aboutMyPicture.617c1f1f58834a3cc271.png",
+    "static/media/notes.png": "/wojtekfedak.portfolio/static/media/notes.42da4ca28cd1656181c0.png",
+    "static/media/geeknaut.png": "/wojtekfedak.portfolio/static/media/geeknaut.bb577cea181cfc7940ee.png",
+    "static/media/githubIcon.svg": "/wojtekfedak.portfolio/static/media/githubIcon.4601c8be971543f9c3da27fbc82af132.svg",
+    "static/media/githubSVG.svg": "/wojtekfedak.portfolio/static/media/githubSVG.ea8e2b413ce6b63a38953f864e2265ad.svg",
+    "static/media/contactIcon.svg": "/wojtekfedak.portfolio/static/media/contactIcon.4735391c5992503c5e73cffa4c36c0c3.svg",
+    "static/media/instaSVG.svg": "/wojtekfedak.portfolio/static/media/instaSVG.9006d2107e6d0b6966538426e011beb2.svg",
+    "static/media/aboutIcon.svg": "/wojtekfedak.portfolio/static/media/aboutIcon.7b61583e565f228814145adee336dbaa.svg",
+    "static/media/homeIcon.svg": "/wojtekfedak.portfolio/static/media/homeIcon.a4df862263f95f6f3689a9af1757778c.svg",
+    "static/media/facebookSVG.svg": "/wojtekfedak.portfolio/static/media/facebookSVG.7c47601cf8ce2180e8621b3a10ab1e53.svg",
+    "index.html": "/wojtekfedak.portfolio/index.html",
+    "main.0c25c7c1.css.map": "/wojtekfedak.portfolio/static/css/main.0c25c7c1.css.map",
+    "main.1d3f6eb5.js.map": "/wojtekfedak.portfolio/static/js/main.1d3f6eb5.js.map",
+    "787.28cb0dcd.chunk.js.map": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c25c7c1.css",
+    "static/js/main.1d3f6eb5.js"
+  ]
+}
