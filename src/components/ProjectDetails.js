@@ -1,6 +1,6 @@
 import "../styles/projectDetailsStyles.css";
 
-const ProjectDetails = ({ text, setShow, image }) => {
+const ProjectDetails = ({ adres, setShow, image, title, secondText }) => {
   return (
     <div
       className="test"
@@ -14,9 +14,11 @@ const ProjectDetails = ({ text, setShow, image }) => {
           style={{ backgroundImage: `url(${image})` }}
         ></div>
         <div className="text-container">
-          <h1>tytuł</h1>
-          <p>{text}</p>
-          <p>tekst drugi</p>
+          <h1>{title}</h1>
+          <a target="_blank" rel="noreferrer" href={adres}>
+            {adres}
+          </a>
+          <p className="project-text">{secondText}</p>
         </div>
       </div>
     </div>
