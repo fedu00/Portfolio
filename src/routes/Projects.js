@@ -1,88 +1,99 @@
 import Project from "../components/Project";
 import "../styles/globalStyles.css";
-import lego from "../assetes/pictures/lego.png";
-import car from "../assetes/pictures/car.png";
-import forest from "../assetes/pictures/forest.png";
-import mountain from "../assetes/pictures/mountain.png";
-import night from "../assetes/pictures/night.png";
+import notes from "../assetes/pictures/notes.png";
+import geeknaut from "../assetes/pictures/geeknaut.png";
+import logo from "../assetes/pictures/logo.png";
 import { useState } from "react";
 import ProjectDetails from "../components/ProjectDetails";
 import AnimateSection from "../components/AnimateSection";
 
 const Projects = () => {
-  const [text, setText] = useState("dsfghfgha");
+  const [adres, setAdres] = useState("");
+  const [secondText, setSecondText] = useState("");
+  const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
   const [show, setShow] = useState(false);
 
-  const handleOpenProjects = (text, image) => {
-    setText(text);
+  const handleOpenProjects = (adres, image, title, secondText) => {
+    setTitle(title);
+    setAdres(adres);
+    setSecondText(secondText);
     setImage(image);
     setShow(true);
   };
 
   const obiekt = {
-    lego: {
-      title: "hehe",
-      image: lego,
+    // geeknaut: {
+    //   title: "Geeknaut",
+    //   text: "przez rok pracy współtworzyłem takie projekty jak",
+    //   secondText: "dwadwa",
+    //   image: geeknaut,
+    // },
+    notes: {
+      title: "Notatnik",
+      adres: "https://github.com/fedu00/notes",
+      secondText:
+        "Prosta aplikacja napisana w React, wykorzystuje komponenty funkcyjne oraz zapisuje dane w locall store.",
+      image: notes,
     },
-    car: {
-      title: "wzium",
-      image: car,
-    },
-    forest: {
-      title: "zielono mi",
-      image: forest,
-    },
-    mountain: {
-      title: "gory tej!",
-      image: mountain,
-    },
-    night: {
-      title: "noc",
-      image: night,
+    logo: {
+      title: "Protfolio",
+      adres: "https://github.com/fedu00/portfolio",
+      secondText:
+        "Strona samodziellnie zaprojektowana, wykorzystuje tutaj: React-router oraz Frame Motion. Portfolio jest jeszcze w trakcie tworzenia. ",
+      image: logo,
     },
   };
   return (
     <AnimateSection>
       <div className="main-section">
         <div className="projects-container">
-          <Project
-            image={lego}
-            title={obiekt.lego.title}
+          {/* <Project
+            image={geeknaut}
+            title={obiekt.geeknaut.title}
             handleOpenProjects={() =>
-              handleOpenProjects(obiekt.lego.title, obiekt.lego.image)
+              handleOpenProjects(
+                obiekt.geeknaut.text,
+                obiekt.geeknaut.image,
+                obiekt.geeknaut.title,
+                obiekt.geeknaut.secondText
+              )
+            }
+          /> */}
+          <Project
+            image={notes}
+            title={obiekt.notes.title}
+            handleOpenProjects={() =>
+              handleOpenProjects(
+                obiekt.notes.adres,
+                obiekt.notes.image,
+                obiekt.notes.title,
+                obiekt.notes.secondText
+              )
             }
           />
           <Project
-            image={car}
-            title={obiekt.car.title}
+            image={logo}
+            title={obiekt.logo.title}
             handleOpenProjects={() =>
-              handleOpenProjects(obiekt.car.title, obiekt.car.image)
-            }
-          />
-          <Project
-            image={forest}
-            title={obiekt.forest.title}
-            handleOpenProjects={() =>
-              handleOpenProjects(obiekt.forest.title, obiekt.forest.image)
-            }
-          />
-          <Project
-            image={mountain}
-            title={obiekt.mountain.title}
-            handleOpenProjects={() =>
-              handleOpenProjects(obiekt.mountain.title, obiekt.mountain.image)
-            }
-          />
-          <Project
-            image={night}
-            title={obiekt.night.title}
-            handleOpenProjects={() =>
-              handleOpenProjects(obiekt.night.title, obiekt.night.image)
+              handleOpenProjects(
+                obiekt.logo.adres,
+                obiekt.logo.image,
+                obiekt.logo.title,
+                obiekt.logo.secondText
+              )
             }
           />
         </div>
-        {show && <ProjectDetails text={text} setShow={setShow} image={image} />}
+        {show && (
+          <ProjectDetails
+            adres={adres}
+            setShow={setShow}
+            image={image}
+            title={title}
+            secondText={secondText}
+          />
+        )}
       </div>
     </AnimateSection>
   );
