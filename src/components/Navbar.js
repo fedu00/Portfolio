@@ -8,7 +8,7 @@ import "./../styles/navbar.css";
 const Navbar = () => {
   return (
     <div className="navBarContainer">
-      <Link to="/">
+      <Link to="/wojtekfedak.portfolio/">
         <img src={homeIcon} alt="logo" />
       </Link>
 
