@@ -1,0 +1,80 @@
+@import "../../styles//globalStyles.scss";
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 80vw;
+  .contact-text {
+    width: 800px;
+    color: $color-white;
+    font-size: $font-size-xl;
+    margin-bottom: $margin-big;
+  }
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    margin: $margin-small 0;
+    width: 600px;
+  }
+  .form-field label {
+    font-size: $font-size-medium;
+    margin-bottom: $margin-xs;
+  }
+  .form-field input,
+  textarea {
+    border: 1px solid $color-white;
+    color: $color-white;
+    background-color: $color-transparent;
+    padding: $padding-medium;
+    font-size: $font-size-small;
+    border-radius: 5px;
+  }
+
+  .form-field textarea {
+    resize: none;
+    height: 100px;
+  }
+  .input-submit {
+    background-color: $color-transparent;
+    color: $color-white;
+    padding: $padding-medium;
+    border-radius: 5px;
+    border: 1px solid $color-white;
+  }
+
+  .contact-ikon {
+    cursor: pointer;
+    height: 50px;
+    margin-top: $margin-big;
+    margin-right: 30px;
+  }
+  .icons-container {
+    margin-top: $margin-medium;
+  }
+}
+
+@media (max-width: $breakpoint-big-tablet) {
+  .contact-section {
+    .contact-text {
+      width: 500px
+     } 
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .contact-section {
+    .form-field {
+      width: 500px
+    }    
+  }
+}
+
+@media (max-width: $breakpoint-big-phone) {
+  .contact-section {
+    width: 100vw;
+    height: 80vh;
+  }
+}

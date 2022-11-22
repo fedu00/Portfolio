@@ -1,0 +1,42 @@
+@import "../../styles//globalStyles.scss";
+
+.projectDetails-offset {
+  height: 100vh;
+  width: 100vw;
+  background-color: $collor-background-grey;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .projectDetails-container {
+    width: 600px;
+    height: 700px;
+    background-color: $color-background;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid white;
+
+    .image-container {
+      height: 390px;
+    }
+    
+    .text-container {
+      margin: $margin-medium;
+      a {
+        text-decoration: none;
+        color: $color-yellow;
+      }
+      .project-text {
+        color: $color-white;
+        margin: $margin-medium 0;
+      }
+    }
+  }
+}
+
+
+
+
+

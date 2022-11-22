@@ -1,11 +1,11 @@
-import Project from "../components/Project";
-import "../styles/globalStyles.css";
-import notes from "../assetes/pictures/notes.png";
-import geeknaut from "../assetes/pictures/geeknaut.png";
-import logo from "../assetes/pictures/logo.png";
+import Project from "../../components/project/Project";
+import "./projects.scss";
+import notes from "../../assetes/pictures/notes.png";
+// import geeknaut from "../assetes/pictures/geeknaut.png";
+import logo from "../../assetes/pictures/logo.png";
 import { useState } from "react";
-import ProjectDetails from "../components/ProjectDetails";
-import AnimateSection from "../components/AnimateSection";
+import ProjectDetails from "../../components/projectDetails/ProjectDetails";
+import AnimateSection from "../../components/AnimateSection";
 
 const Projects = () => {
   const [adres, setAdres] = useState("");
@@ -46,7 +46,7 @@ const Projects = () => {
   };
   return (
     <AnimateSection>
-      <div className="main-section">
+      <div className="projects-page-section">
         <div className="projects-container">
           {/* <Project
             image={geeknaut}

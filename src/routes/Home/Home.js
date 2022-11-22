@@ -1,10 +1,10 @@
-import "./../styles/globalStyles.css";
-import AnimateSection from "../components/AnimateSection";
+import AnimateSection from "../../components/AnimateSection";
+import "./home.scss";
 
 const HomePage = () => {
   return (
     <AnimateSection>
-      <div className="main-section">
+      <div className="home-page-section">
         <div className="pink text-wraper">
           &lt;h1&gt;
           <p className="text">

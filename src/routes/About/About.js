@@ -1,11 +1,11 @@
-import "./../styles/globalStyles.css";
-import myPicture from "../assetes/pictures/aboutMyPicture.png";
-import AnimateSection from "../components/AnimateSection";
+import "./about.scss";
+import myPicture from "../../assetes/pictures/aboutMyPicture.png";
+import AnimateSection from "../../components/AnimateSection";
 
 const About = () => {
   return (
     <AnimateSection>
-      <div className="main-section">
+      <div className="about-section">
         <div className="about-container">
           <div
             className="image-backgroun-about"

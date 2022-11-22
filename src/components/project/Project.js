@@ -1,9 +1,9 @@
-import "../styles/projectStyles.css";
+import "./project.scss";
 
 const Project = ({ image, title, handleOpenProjects }) => {
   return (
     <div
-      className="projectComponentContainer"
+      className="project-container"
       style={{ backgroundImage: `url(${image})` }}
       onClick={() => handleOpenProjects(title)}
     >
