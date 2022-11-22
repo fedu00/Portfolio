@@ -1,3 +1,4 @@
+@import "./globalStyles.scss";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
 
 * {
@@ -15,6 +16,8 @@
   overflow: hidden;
 }
 
-.contentContainer {
-  /* flex-grow: 1; */
+@media (max-width: $breakpoint-big-phone) {
+  .websiteContainer {
+    flex-direction: column-reverse
+  }
 }

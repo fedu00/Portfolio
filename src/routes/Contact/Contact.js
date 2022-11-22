@@ -1,10 +1,10 @@
-import "../styles/globalStyles.css";
-import AnimateSection from "../components/AnimateSection";
+import "./contact.scss";
+import AnimateSection from "../../components/AnimateSection";
 import emailjs from "emailjs-com";
 import React from "react";
-import githubSvg from "../assetes/svgIcons/githubSVG.svg";
-import facebookSvg from "../assetes/svgIcons/facebookSVG.svg";
-import instaSvg from "../assetes/svgIcons/instaSVG.svg";
+import githubSvg from "../../assetes/svgIcons/githubSVG.svg";
+import facebookSvg from "../../assetes/svgIcons/facebookSVG.svg";
+import instaSvg from "../../assetes/svgIcons/instaSVG.svg";
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -29,7 +29,7 @@ const Contact = () => {
   };
   return (
     <AnimateSection>
-      <div className="main-section">
+      <div className="contact-section">
         <div>
           <p className="contact-text">
             Moja poczta jest zawsze otwarta, jeśli chcesz o coś zapytać lub

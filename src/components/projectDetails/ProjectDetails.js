@@ -1,14 +1,14 @@
-import "../styles/projectDetailsStyles.css";
+import "./projectDetails.scss";
 
 const ProjectDetails = ({ adres, setShow, image, title, secondText }) => {
   return (
     <div
-      className="test"
+      className="projectDetails-offset"
       onClick={() => {
         setShow(false);
       }}
     >
-      <div className="orange-div">
+      <div className="projectDetails-container">
         <div
           className="image-container"
           style={{ backgroundImage: `url(${image})` }}

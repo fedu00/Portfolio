@@ -1,0 +1,27 @@
+@import "../../styles//globalStyles.scss";
+
+.project-container {
+  width: 420px;
+  height: 240px;
+  margin: $margin-s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  .project-title {
+    color: $color-white;
+    border: 1px solid $color-white;
+    background-color: $collor-background-grey;
+    padding: $padding-xs $padding-s;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+}
+
+.project-container:hover h1 {
+  opacity: 1;
+}
+
+

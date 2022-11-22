@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import githubIcon from "../assetes/svgIcons/githubIcon.svg";
-import homeIcon from "../assetes/svgIcons/homeIcon.svg";
-import aboutIcon from "../assetes/svgIcons/aboutIcon.svg";
-import contactIcon from "../assetes/svgIcons/contactIcon.svg";
-import "./../styles/navbar.css";
+import githubIcon from "../../assetes/svgIcons/githubIcon.svg";
+import homeIcon from "../../assetes/svgIcons/homeIcon.svg";
+import aboutIcon from "../../assetes/svgIcons/aboutIcon.svg";
+import contactIcon from "../../assetes/svgIcons/contactIcon.svg";
+import "./navbar.scss";
 
 const Navbar = () => {
   return (
