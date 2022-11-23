@@ -30,3 +30,20 @@
     height: 80vh;
   }
 }
+
+@media (max-width: $breakpoint-phone) {
+  .home-page-section {
+    .text-wraper {
+      width: 80vw;
+      font-size: $font-size-medium;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small-phone) {
+  .home-page-section {
+    .text-wraper {
+      font-size: $font-size-small;
+    }
+  }
+}

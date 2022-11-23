@@ -19,3 +19,9 @@
     margin-right: $margin-small;
   }
 }
+
+@media (max-width: $breakpoint-big-phone) {
+  .footer {
+    bottom: 5px;
+  }
+}
