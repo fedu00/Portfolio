@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wojtekfedak.portfolio/static/css/main.e32d888b.css",
-    "main.js": "/wojtekfedak.portfolio/static/js/main.784dfe20.js",
+    "main.css": "/wojtekfedak.portfolio/static/css/main.f689cf97.css",
+    "main.js": "/wojtekfedak.portfolio/static/js/main.0c09e750.js",
     "static/js/787.28cb0dcd.chunk.js": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/aboutMyPicture.png": "/wojtekfedak.portfolio/static/media/aboutMyPicture.617c1f1f58834a3cc271.png",
     "static/media/notes.png": "/wojtekfedak.portfolio/static/media/notes.42da4ca28cd1656181c0.png",
@@ -16,12 +16,12 @@
     "static/media/facebookSVG.svg": "/wojtekfedak.portfolio/static/media/facebookSVG.7c47601cf8ce2180e8621b3a10ab1e53.svg",
     "index.html": "/wojtekfedak.portfolio/index.html",
     "static/media/cross.svg": "/wojtekfedak.portfolio/static/media/cross.f0a0b8111f3b01b60d0298d1ed906bcc.svg",
-    "main.e32d888b.css.map": "/wojtekfedak.portfolio/static/css/main.e32d888b.css.map",
-    "main.784dfe20.js.map": "/wojtekfedak.portfolio/static/js/main.784dfe20.js.map",
+    "main.f689cf97.css.map": "/wojtekfedak.portfolio/static/css/main.f689cf97.css.map",
+    "main.0c09e750.js.map": "/wojtekfedak.portfolio/static/js/main.0c09e750.js.map",
     "787.28cb0dcd.chunk.js.map": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e32d888b.css",
-    "static/js/main.784dfe20.js"
+    "static/css/main.f689cf97.css",
+    "static/js/main.0c09e750.js"
   ]
 }
