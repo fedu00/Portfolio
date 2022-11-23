@@ -28,7 +28,11 @@ const Projects = () => {
       adress: "https://github.com/fedu00/portfolio",
       image: logo,
       text: [
-        "Strona samodziellnie zaprojektowana, wykorzystuje tutaj: React-router oraz Frame Motion. Portfolio jest jeszcze w trakcie tworzenia. ",
+        "Samodzielnie zaprojektowana i napisana strona, do stworzenia jej wykorzystałem:",
+        "React",
+        "React-router",
+        "Frame Motion",
+        "Sass",
       ],
     },
     {
@@ -43,7 +47,7 @@ const Projects = () => {
       title: "Geeknauts",
       image: geeknaut,
       text: [
-        "pracując dla firmy Geeknauts tworzyłem takie projekty jaki:",
+        "Podczas współpracy z firmą Geeknauts byłem odpowiedzialny za tworzenie części frontendowej głównie z wykorzystaniem biblioteki React i React Nastive, oraz tworzenie grafik i makiet za pomocą programu Figma w takich projektach jak:",
         "- Vip CLub",
         "- Geeknauts Website",
         "- Photovoltaica",
