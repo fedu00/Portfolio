@@ -42,3 +42,22 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-phone) {
+  .projectDetails-offset {
+    .projectDetails-container {
+      width: 90vw;
+      height: 90vh;
+      overflow: hidden;
+      .image-container {
+        width: 90vw;
+        height: 25vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small-phone) {
+}

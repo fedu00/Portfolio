@@ -42,21 +42,55 @@
 }
 
 @media (max-width: $breakpoint-big-tablet) {
-    .about-section {
-        .about-container {
-            flex-direction: column-reverse;
-            .image-backgroun-about {
-                height: 300px;
-                width: 400px;
-            }
-        }
-        
+  .about-section {
+    .about-container {
+      flex-direction: column-reverse;
+      .image-backgroun-about {
+        height: 300px;
+        width: 400px;
+      }
     }
+  }
 }
 
 @media (max-width: $breakpoint-big-phone) {
-    .about-section {
-        width: 100vw;
-        height: 80vh
-    }    
+  .about-section {
+    width: 100vw;
+    height: 80vh;
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .about-section {
+    .about-container {
+      .image-backgroun-about {
+        height: 200px;
+        width: 350px;
+      }
+      .text-wraper {
+        width: 80vw;
+        font-size: $font-size-small;
+        .text {
+          font-size: $font-size-small;
+          margin: $margin-small;
+        }
+      }
+      .about-text-wrapper {
+        width: 80vw;
+        font-size: $font-size-s;
+        .text {
+          margin: $margin-small;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-small-phone) {
+  .about-section {
+    .about-container {
+      .image-backgroun-about {
+        height: 0;
+      }
+    }
+  }
 }

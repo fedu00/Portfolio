@@ -17,7 +17,7 @@
   }
 }
 
-@media (max-width: $breakpoint-small-tablet ) {
+@media (max-width: $breakpoint-small-tablet) {
   .navBarContainer {
     margin-right: $margin-medium;
   }
@@ -28,10 +28,27 @@
     width: 100vw;
     flex-direction: row;
     margin-right: 0;
-    padding-bottom: $padding-xl*2 ;
+    padding-bottom: $padding-xl;
     img {
       height: 120px;
       margin: $margin-small;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .navBarContainer {
+    img {
+      height: 80px;
+      margin: $margin-xs;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small-phone) {
+  .navBarContainer {
+    img {
+      height: 60px;
     }
   }
 }

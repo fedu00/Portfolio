@@ -24,4 +24,16 @@
   opacity: 1;
 }
 
+@media (max-width: $breakpoint-phone) {
+  .project-container {
+    height: 180px;
+    width: 300px;
+  }
+}
 
+@media (max-width: $breakpoint-small-phone) {
+  .project-container {
+    height: 120px;
+    width: 210px;
+  }
+}

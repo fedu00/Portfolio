@@ -59,16 +59,16 @@
 @media (max-width: $breakpoint-big-tablet) {
   .contact-section {
     .contact-text {
-      width: 500px
-     } 
+      width: 500px;
+    }
   }
 }
 
 @media (max-width: $breakpoint-tablet) {
   .contact-section {
     .form-field {
-      width: 500px
-    }    
+      width: 500px;
+    }
   }
 }
 
@@ -76,5 +76,47 @@
   .contact-section {
     width: 100vw;
     height: 80vh;
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .contact-section {
+    .contact-text {
+      width: 80vw;
+      font-size: $font-size-small;
+    }
+    .form-field {
+      width: 80vw;
+      label {
+        font-size: $font-size-small;
+      }
+      textarea {
+        height: 60px;
+      }
+    }
+
+    .icons-container {
+      margin-top: 0;
+      a {
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small-phone) {
+  .contact-section {
+    .contact-text {
+      margin-bottom: $margin-s;
+    }
+    .icons-container {
+      a {
+        img {
+          height: 25px;
+        }
+      }
+    }
   }
 }
