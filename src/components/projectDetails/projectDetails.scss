@@ -12,7 +12,7 @@
   align-items: center;
   .projectDetails-container {
     width: 600px;
-    height: 700px;
+    height: 750px;
     background-color: $color-background;
     overflow: hidden;
     border-radius: 5px;
@@ -37,7 +37,7 @@
       }
       .project-text {
         color: $color-white;
-        margin: $margin-medium 0;
+        margin: $margin-small 0;
       }
     }
   }

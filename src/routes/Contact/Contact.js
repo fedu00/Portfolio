@@ -5,6 +5,7 @@ import React from "react";
 import githubSvg from "../../assetes/svgIcons/githubSVG.svg";
 import facebookSvg from "../../assetes/svgIcons/facebookSVG.svg";
 import instaSvg from "../../assetes/svgIcons/instaSVG.svg";
+import linkedinSvg from "../../assetes/svgIcons/linkedinSVG.svg";
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -96,6 +97,13 @@ const Contact = () => {
           </a>
           <a target="_blank" rel="noreferrer" href="https://github.com/fedu00">
             <img className="contact-ikon" src={githubSvg} alt="logo" />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/wojciech-fedak-82a35724b/"
+          >
+            <img className="contact-ikon" src={linkedinSvg} alt="logo" />
           </a>
         </div>
       </div>
