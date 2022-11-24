@@ -24,7 +24,7 @@ const Projects = () => {
 
   const projectsData = [
     {
-      title: "Protfolio",
+      title: "Portfolio",
       adress: "https://github.com/fedu00/portfolio",
       image: logo,
       text: [
