@@ -1,40 +1,25 @@
-import "./about.scss";
-import myPicture from "../../assetes/pictures/aboutMyPicture.png";
-import AnimateSection from "../../components/AnimateSection";
+import myPicture from '../../assetes/pictures/aboutMyPicture.png';
+import AnimateSection from '../../components/AnimateSection/AnimateSection';
+import { Wrapper, TextWrapper, Title } from 'routes/About/About.styles';
 
 const About = () => {
   return (
     <AnimateSection>
-      <div className="about-section">
-        <div className="about-container">
-          <div
-            className="image-backgroun-about"
-            style={{ backgroundImage: `url(${myPicture})` }}
-          ></div>
-          <div>
-            <div className="pink text-wraper">
-              &lt;h2&gt;
-              <h2 className="text">Wojtek</h2>
-              &lt;/h2&gt;
-            </div>
-
-            <div className="orange about-text-wrapper">
-              &lt;p&gt;
-              <p className="text">
-                W wieku 26 lat zacząłem swoją naukę programowania. Postawiłem na
-                front-end, ponieważ od zawsze zajmowałem się
-                malowaniem/rysowaniem i zwracam uwagę na wizualne aspekty. Teraz
-                po 2 latach nauki w tym ponad rok pracy komercyjnej świetnie się
-                odnajduję, tworząc projekty z wykorzystaniem bibliotek React
-                owych oraz rozpocząłem naukę animacji. Oprócz programowania
-                często oglądam filmy motoryzacyjne i szukam wymarzonego auta,
-                wyjdę poćwiczyć lub zanurzę się w grę, lub serial.
+      <Wrapper>
+        <TextWrapper>
+          <Title>
+            <h1>Wojtek</h1>
+            <h1>Fedak</h1>
+          </Title>
+              <p>
+              Cześć! Jestem Front-end developerem, swoje aplikacje piszę w bibliotece React i React Native. Oprócz zdolności programistycznych mam też oko do szczegółów przez co świetnie sprawuje się właśnie na froncie. Mam za sobą już ponad rok doświadczenia komercyjnego i cały czas podnoszę swoje umiejętności jak developer.
               </p>
-              &lt;/p&gt;
-            </div>
-          </div>
-        </div>
-      </div>
+              <p>
+              W wolnej chwili zajmuje się również projektowaniem, rysowaniem, oglądam ciekawostki motoryzacyjne, ćwiczę lub zanurzam się grę komputerową albo serial.
+              </p>
+        </TextWrapper>
+        <img src={myPicture} />
+      </Wrapper>
     </AnimateSection>
   );
 };

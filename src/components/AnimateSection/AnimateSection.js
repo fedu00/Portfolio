@@ -13,6 +13,7 @@ const AnimateSection = ({ children }) => {
       animate="animate"
       exit="exit"
       transition={{ duration: 0.8 }}
+      style={{ height: "100%" }}
     >
       {children}
     </motion.div>

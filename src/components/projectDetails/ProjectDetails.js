@@ -1,10 +1,10 @@
-import "./projectDetails.scss";
-import cross from "../../assetes/svgIcons/cross.svg";
+import cross from '../../assetes/svgIcons/cross.svg';
+import { WrapperOffset, Wrapper, ImmageWrapper, TextWrapper } from 'components/projectDetails/ProjectDetails.styles'
 
 const ProjectDetails = ({ adress, setShow, image, title, text }) => {
   return (
-    <div className="projectDetails-offset">
-      <div className="projectDetails-container">
+    <WrapperOffset>
+      <Wrapper>
         <img
           src={cross}
           alt="logo"
@@ -13,21 +13,20 @@ const ProjectDetails = ({ adress, setShow, image, title, text }) => {
             setShow(false);
           }}
         />
-        <div
-          className="image-container"
-          style={{ backgroundImage: `url(${image})` }}
-        ></div>
-        <div className="text-container">
+        <ImmageWrapper
+          image={image}
+        ></ImmageWrapper>
+        <TextWrapper>
           <h1>{title}</h1>
           <a target="_blank" rel="noreferrer" href={adress}>
             {adress}
           </a>
           {text.map((element) => (
-            <p className="project-text">{element}</p>
+            <p>{element}</p>
           ))}
-        </div>
-      </div>
-    </div>
+        </TextWrapper>
+      </Wrapper>
+    </WrapperOffset>
   );
 };
 
