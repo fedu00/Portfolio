@@ -1,28 +1,28 @@
-import AnimateSection from "../../components/AnimateSection";
-import "./home.scss";
+import AnimateSection from '../../components/AnimateSection/AnimateSection';
+import { Wrapper, NameWrapper, TextWrapper, BackgroundColorWrapper } from 'routes/Home/Home.styles';
 
 const HomePage = () => {
   return (
     <AnimateSection>
-      <div className="home-page-section">
-        <div className="pink text-wraper">
-          &lt;h1&gt;
-          <p className="text">
-            Cześć! mam na imię Wojtek i liczę, że znajdziesz tutaj coś dla
-            siebie
-          </p>
-          &lt;/h1&gt;
-        </div>
-        <div className="orange text-wraper">
-          &lt;p&gt;
-          <p className="text">
-            Jestem programistą z rocznym doświadczeniem jako frontend developer.
-            Zajmuje się tworzeniem oprogramowania web front-endu i aplikacji
-            mobilnych z wykorzystaniem biblioteki React i ReactNative.
-          </p>
-          &lt;/p&gt;
-        </div>
-      </div>
+      <Wrapper>
+        <BackgroundColorWrapper>
+          <NameWrapper>
+            <p>WOJ</p>
+            <p>TEK</p>
+          </NameWrapper>
+          <TextWrapper>
+            <p>
+              Cześć! mam na imię Wojtek i liczę, że znajdziesz tutaj coś dla
+              siebie
+            </p>
+            <p>
+              Jestem programistą z rocznym doświadczeniem jako frontend developer.
+              Zajmuje się tworzeniem oprogramowania web front-endu i aplikacji
+              mobilnych z wykorzystaniem biblioteki React i ReactNative.
+            </p>
+          </TextWrapper>
+        </BackgroundColorWrapper>
+      </Wrapper>
     </AnimateSection>
   );
 };
