@@ -5,7 +5,13 @@ import githubSvg from "../../assetes/svgIcons/githubSVG.svg"
 import facebookSvg from "../../assetes/svgIcons/facebookSVG.svg"
 import instaSvg from "../../assetes/svgIcons/instaSVG.svg"
 import linkedinSvg from "../../assetes/svgIcons/linkedinSVG.svg"
-import { Wrapper, Text, FormWrapper } from "routes/Contact/Contact.styles"
+import {
+  SectionWrapper,
+  TextWrapper,
+  Wrapper,
+  Text,
+  FormWrapper,
+} from "routes/Contact/Contact.styles"
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -25,53 +31,54 @@ const Contact = () => {
   }
   return (
     <AnimateSection>
-      <Wrapper>
-        <p className="contact-text">
-          Moja poczta jest zawsze otwarta, jeśli chcesz o coś zapytać lub wysłać
-          wiadomość to śmiało!
-        </p>
-        <FormWrapper>
-          <form onSubmit={sendEmail}>
-            <div className="form-field">
-              <label>Imię</label>
-              <input
-                type="text"
-                name="name"
-                className="form-input"
-                placeholder="imię"
-              />
-            </div>
-            <div className="form-field">
-              <label>Email</label>
-              <input
-                type="email"
-                name="email"
-                className="form-input"
-                placeholder="email"
-              />
-            </div>
-            <div className="form-field">
-              <label>Temat</label>
-              <input
-                type="text"
-                name="subject"
-                className="form-input"
-                placeholder="temat"
-              />
-            </div>
-            <div className="form-field">
-              <label>Wiadomość</label>
-              <textarea
-                name="message"
-                className="form-input"
-                placeholder="wiadomość"
-              />
-            </div>
+      <SectionWrapper>
+        <Wrapper>
+          <TextWrapper>
+            <p>Don't be shy, send a message!</p>
+          </TextWrapper>
+          <FormWrapper>
+            <form onSubmit={sendEmail}>
+              <div className="form-field">
+                <input
+                  type="text"
+                  name="name"
+                  className="form-input"
+                  placeholder="name"
+                />
+              </div>
+              <div className="form-field">
+                <input
+                  type="email"
+                  name="email"
+                  className="form-input"
+                  placeholder="email"
+                />
+              </div>
+              <div className="form-field">
+                <input
+                  type="text"
+                  name="subject"
+                  className="form-input"
+                  placeholder="subject"
+                />
+              </div>
+              <div className="form-field">
+                <textarea
+                  name="message"
+                  className="form-input"
+                  placeholder="message"
+                />
+              </div>
 
-            <input type="submit" value="Wyślij wiadomość" className="input-submit" />
-          </form>
-        </FormWrapper>
-      </Wrapper>
+              <input
+                type="submit"
+                value="send a message!"
+                className="input-submit"
+              />
+            </form>
+          </FormWrapper>
+        </Wrapper>
+      </SectionWrapper>
     </AnimateSection>
   )
 }

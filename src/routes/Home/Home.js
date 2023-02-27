@@ -1,30 +1,32 @@
-import AnimateSection from '../../components/AnimateSection/AnimateSection';
-import { Wrapper, NameWrapper, TextWrapper, BackgroundColorWrapper } from 'routes/Home/Home.styles';
+import AnimateSection from "../../components/AnimateSection/AnimateSection"
+import {
+  SectionWrapper,
+  NameWrapper,
+  TextWrapper,
+  BorderWrapper,
+} from "routes/Home/Home.styles"
 
 const HomePage = () => {
   return (
     <AnimateSection>
-      <Wrapper>
-        <BackgroundColorWrapper>
+      <SectionWrapper>
+        <BorderWrapper>
           <NameWrapper>
-            <p>WOJ</p>
-            <p>TEK</p>
+            <p>Hi, my name is</p>
+            <p>Wojtek</p>
           </NameWrapper>
           <TextWrapper>
+            <p>I am front-end developer</p>
             <p>
-              Cześć! mam na imię Wojtek i liczę, że znajdziesz tutaj coś dla
-              siebie
-            </p>
-            <p>
-              Jestem programistą z rocznym doświadczeniem jako frontend developer.
-              Zajmuje się tworzeniem oprogramowania web front-endu i aplikacji
-              mobilnych z wykorzystaniem biblioteki React i ReactNative.
+              I am a programmer with a year of experience as a frontend developer.
+              for more details, please visit my github and if you are interested in
+              who I am, I have also prepared an article about it.
             </p>
           </TextWrapper>
-        </BackgroundColorWrapper>
-      </Wrapper>
+        </BorderWrapper>
+      </SectionWrapper>
     </AnimateSection>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
