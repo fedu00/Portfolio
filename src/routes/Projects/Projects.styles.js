@@ -1,99 +1,106 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
-export const Wrapper = styled.div`
+export const SectionWrapper = styled.div`
   max-height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   overflow: auto;
-  @media (max-width: 500px) {
-    max-height: none;
-    height: 100%;
-}
-`;
-
-export const BackgroundColorWrapper = styled.div`
-  max-width: 65vw;
-  margin: 100px 300px 100px 300px;
-  background-color: ${({backgroundColor}) => backgroundColor};
-  padding: 120px 160px;
+  @media (max-width: 800px) {
+    align-items: center;
+  }
+`
+export const Wrapper = styled.div`
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: ${({ directioncolumn }) => (directioncolumn ? "column" : "row")};
+  > h2 {
+    margin-left: 100px;
+    font-size: 56px;
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    > h2 {
+      margin-left: 0;
+    }
+  }
+`
+
+export const BorderWrapper = styled.div`
+  width: 50%;
+  margin: 20px 100px;
+  border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
   align-items: center;
   justify-content: center;
-  position: relative;
-  svg {
-    margin: 20px;
-
-  }
   h2 {
-    color: black;
-    position: absolute;
-    top: -20px;
-    left: -20px;
+    font-size: 56px;
+  }
+  > p {
+    margin: 5px 0 5px 50px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  > p:nth-of-type(3) {
+    margin: 50px 0 50px 50px;
   }
 
-  &::before {
-    content: "${({ title }) => title }";
-    color: ${({theme}) => theme.colors.navyBlue};
-    text-shadow: -3px 3px 6px rgba(0, 0, 0, 0.4);
-    font-family: 'Baskervville', serif;
-    position: absolute;
-    font-size: 140px;
-    line-height: 100px;
-    top: -50px;
-    left: -100px;
+  @media (max-width: 1200px) {
+    width: 60%;
+    margin: 50px;
+    > p {
+      font-size: 16px;
+    }
+    h2 {
+      margin-top: 0;
+    }
   }
+  @media (max-width: 800px) {
+    width: 90%;
+    margin: 20px 0;
+  }
+`
 
-  @media (max-width: 1500px) {
-    padding: 80px 110px;
-    margin: 80px 200px 80px 200px;
-    svg {
-      height: 80px;
-      margin: 10px;
-    }
-    &::before {
-      font-size: 110px;
-    }
-    }
+export const RowSvgsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+`
 
-    @media (max-width: 1250px) {
-      max-width: 75vw;
-      padding: 60px 40px;
-      margin: 80px 150px 80px 150px;
-    svg {
-      height: 60px;
-      margin: 5px;
+export const ButtonWrapper = styled.div`
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    background-color: ${({ theme }) => theme.colors.orange};
+    color: white;
+    padding: 20px 25px;
+  }
+  @media (max-width: 1200px) {
+    width: 40%;
+    button {
+      font-size: 20px;
+      padding: 15px;
     }
-    }
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+`
 
-    @media (max-width: 900px) {
-      max-width: none;
-      padding: 60px 30px;
-      margin: 80px 45px 80px 45px;
-      svg {
-        height: 50px;
-      }
-      &::before {
-        font-size: 80px;
-        left: -10px;
-      }
-    }
-    @media (max-width: 500px) {
-      padding: 60px 15px;
-      margin: 60px 20px 10px 20px;
-      svg {
-        height: 40px;
-      }
-      &:nth-child(2) {
-        flex-direction: column;
-        div {
-          height:auto;
-        }
-      }
-    }
-    @media (max-width: 400px) {
-      svg {
-        height: 30px;
-      }
-    }
-`;
+export const ProjectsWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
