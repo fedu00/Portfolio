@@ -74,6 +74,7 @@ export const ButtonWrapper = styled.div`
   align-items: center;
   justify-content: center;
   button {
+    cursor: pointer;
     font-size: 24px;
     font-weight: 600;
     border: none;

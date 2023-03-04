@@ -19,6 +19,8 @@ import { ReactComponent as ReactSVG } from "assetes/svgIcons/stackIcons/react.sv
 import { ReactComponent as FigmaSVG } from "assetes/svgIcons/stackIcons/figma.svg"
 import axios from "axios"
 
+import CvFile from "assetes/files/Wojtek Fedak CV.pdf"
+
 const Projects = () => {
   const [adress, setAdress] = useState("")
   const [text, setText] = useState("")
@@ -86,7 +88,9 @@ const Projects = () => {
         </BorderWrapper>
         <Wrapper>
           <ButtonWrapper>
-            <button>download my CV</button>
+            <a href={CvFile} download="Wojtek Fedak CV" target="_blank">
+              <button>downlod my CV</button>
+            </a>
           </ButtonWrapper>
           <BorderWrapper>
             <h2>Where I’ve worked?</h2>
