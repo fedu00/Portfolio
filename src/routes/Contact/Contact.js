@@ -1,10 +1,6 @@
 import AnimateSection from "../../components/AnimateSection/AnimateSection"
 import emailjs from "emailjs-com"
 import React from "react"
-import githubSvg from "../../assetes/svgIcons/githubSVG.svg"
-import facebookSvg from "../../assetes/svgIcons/facebookSVG.svg"
-import instaSvg from "../../assetes/svgIcons/instaSVG.svg"
-import linkedinSvg from "../../assetes/svgIcons/linkedinSVG.svg"
 import {
   SectionWrapper,
   TextWrapper,
@@ -12,8 +8,10 @@ import {
   Text,
   FormWrapper,
 } from "routes/Contact/Contact.styles"
+import useModal from "components/Modal/useModal"
 
 const Contact = () => {
+  const { Modal, isOpen, handleOpenModal, handleCloseModal } = useModal()
   const sendEmail = (e) => {
     e.preventDefault()
 
@@ -33,6 +31,12 @@ const Contact = () => {
     <AnimateSection>
       <SectionWrapper>
         <Wrapper>
+          {isOpen ? (
+            <Modal
+              handleCloseModal={handleCloseModal}
+              text="Will reply to email soon!"
+            />
+          ) : null}
           <TextWrapper>
             <p>Don't be shy, send a message!</p>
           </TextWrapper>
@@ -72,6 +76,7 @@ const Contact = () => {
 
               <input
                 type="submit"
+                onClick={handleOpenModal}
                 value="send a message!"
                 className="input-submit"
               />

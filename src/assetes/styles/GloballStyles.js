@@ -5,7 +5,7 @@ export const GloballStyle = createGlobalStyle`
 
 html {
     box-sizing: border-box;
-    background-color: #F0F0F0;
+    background-color: ${({ theme }) => theme.colors.backGroundColor};
 }
 
 *, *::after, *::before {
