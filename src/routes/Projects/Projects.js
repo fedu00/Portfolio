@@ -20,6 +20,7 @@ import { ReactComponent as FigmaSVG } from "assetes/svgIcons/stackIcons/figma.sv
 import axios from "axios"
 
 import CvFile from "assetes/files/Wojtek Fedak CV.pdf"
+import useModal from "components/Modal/useModal"
 
 const Projects = () => {
   const [adress, setAdress] = useState("")
@@ -28,6 +29,7 @@ const Projects = () => {
   const [image, setImage] = useState("")
   const [show, setShow] = useState(false)
   const [projects, setProjects] = useState([])
+  const { Modal, isOpen, handleOpenModal, handleCloseModal } = useModal()
 
   const handleOpenProjects = (adress, image, title, text) => {
     setTitle(title)
@@ -87,9 +89,22 @@ const Projects = () => {
           </RowSvgsWrapper>
         </BorderWrapper>
         <Wrapper>
+          {isOpen ? (
+            <Modal
+              handleCloseModal={handleCloseModal}
+              text="You have downloaded your resume!"
+            />
+          ) : null}
           <ButtonWrapper>
             <a href={CvFile} download="Wojtek Fedak CV" target="_blank">
-              <button>downlod my CV</button>
+              <button
+                onClick={() => {
+                  console.log("udalo sie")
+                  handleOpenModal()
+                }}
+              >
+                downlod my resume
+              </button>
             </a>
           </ButtonWrapper>
           <BorderWrapper>
