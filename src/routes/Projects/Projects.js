@@ -10,7 +10,10 @@ import {
   ButtonWrapper,
   RowSvgsWrapper,
   ProjectsWrapper,
+  ExperienceButton,
+  ExperienceWrapper,
 } from "routes/Projects/Projects.styles"
+import ExperienceItem from "components/ExperienceItem/ExperienceItem"
 import { ReactComponent as HtmlSVG } from "assetes/svgIcons/stackIcons/html.svg"
 import { ReactComponent as CssSVG } from "assetes/svgIcons/stackIcons/css.svg"
 import { ReactComponent as JsSVG } from "assetes/svgIcons/stackIcons/JS.svg"
@@ -29,6 +32,8 @@ const Projects = () => {
   const [image, setImage] = useState("")
   const [show, setShow] = useState(false)
   const [projects, setProjects] = useState([])
+  const [experienceProjects, setExperienceProjects] = useState([])
+  const [dropDownExperience, setDropDownExperience] = useState(false)
   const { Modal, isOpen, handleOpenModal, handleCloseModal } = useModal()
 
   const handleOpenProjects = (adress, image, title, text) => {
@@ -47,17 +52,24 @@ const Projects = () => {
         "https://graphql.datocms.com/",
         {
           query: `
-      {
-        allProjects {
-          id
-          title
-          githublink
-          content
-          image {
-            url
-          }
-        }
-      }
+          {
+            allExperiences{
+              date
+              title
+              aboutProject
+              role
+              technologies
+            }
+              allProjects {
+                id
+                title
+                content
+                githublink
+                image {
+                  url
+                }
+              }
+            }
       `,
         },
         {
@@ -66,11 +78,12 @@ const Projects = () => {
           },
         }
       )
-      .then(({ data: { data } }) => setProjects(data.allProjects))
+      .then(({ data: { data } }) => {
+        setExperienceProjects(data.allExperiences.reverse())
+        setProjects(data.allProjects)
+      })
       .catch((err) => console.log(err))
   }, [])
-
-  console.log("projects", projects)
 
   return (
     <AnimateSection>
@@ -99,7 +112,6 @@ const Projects = () => {
             <a href={CvFile} download="Wojtek Fedak CV" target="_blank">
               <button
                 onClick={() => {
-                  console.log("udalo sie")
                   handleOpenModal()
                 }}
               >
@@ -116,6 +128,22 @@ const Projects = () => {
               using the React and React Native libraries. In addition to programming,
               I dealt with mock-ups and graphics using the Figma program.
             </p>
+            <ExperienceButton>
+              <button onClick={() => setDropDownExperience(!dropDownExperience)}>
+                show my work in Geeknauts
+              </button>
+            </ExperienceButton>
+            <ExperienceWrapper dropDownExperience={dropDownExperience}>
+              {experienceProjects.map((project) => (
+                <ExperienceItem
+                  title={project.title}
+                  date={project.date}
+                  role={project.role}
+                  aboutProject={project.aboutProject}
+                  technologies={project.technologies}
+                />
+              ))}
+            </ExperienceWrapper>
           </BorderWrapper>
         </Wrapper>
         <Wrapper directioncolumn={true}>
