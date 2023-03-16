@@ -60,6 +60,37 @@ export const BorderWrapper = styled.div`
   }
 `
 
+export const ExperienceButton = styled.div`
+  display: flex;
+  align-items: center;
+  button {
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    background-color: ${({ theme }) => theme.colors.orange};
+    color: white;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+  }
+`
+
+export const ExperienceWrapper = styled.div`
+  min-width: 500px;
+  height: ${({ dropDownExperience }) => (dropDownExperience ? "1000px" : "0")};
+  overflow: hidden;
+  transition: 1s;
+  @media (max-width: 800px) {
+    width: 400px;
+    height: ${({ dropDownExperience }) => (dropDownExperience ? "1250px" : "0")};
+  }
+  @media (max-width: 500px) {
+    width: 300px;
+    height: ${({ dropDownExperience }) => (dropDownExperience ? "1350px" : "0")};
+  }
+`
+
 export const RowSvgsWrapper = styled.div`
   display: flex;
   justify-content: center;
