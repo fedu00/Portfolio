@@ -26,21 +26,37 @@ import CvFile from "assetes/files/Wojtek Fedak CV.pdf"
 import useModal from "components/Modal/useModal"
 
 const Projects = () => {
-  const [adress, setAdress] = useState("")
-  const [text, setText] = useState("")
-  const [title, setTitle] = useState("")
-  const [image, setImage] = useState("")
+  const [openProject, setOpenProject] = useState({
+    title: "",
+    stack: [],
+    content: "",
+    githublink: "",
+    websiteLink: "",
+    image: "",
+  })
+
   const [show, setShow] = useState(false)
   const [projects, setProjects] = useState([])
   const [experienceProjects, setExperienceProjects] = useState([])
   const [dropDownExperience, setDropDownExperience] = useState(false)
   const { Modal, isOpen, handleOpenModal, handleCloseModal } = useModal()
 
-  const handleOpenProjects = (adress, image, title, text) => {
-    setTitle(title)
-    setAdress(adress)
-    setText(text)
-    setImage(image)
+  const handleOpenProjects = (
+    title,
+    stack,
+    content,
+    githubLink,
+    websiteLink,
+    image
+  ) => {
+    setOpenProject({
+      title,
+      stack,
+      content,
+      githubLink,
+      websiteLink,
+      image,
+    })
     setShow(true)
   }
 
@@ -63,8 +79,10 @@ const Projects = () => {
               allProjects {
                 id
                 title
+                stack
                 content
                 githublink
+                websitelink
                 image {
                   url
                 }
@@ -80,7 +98,11 @@ const Projects = () => {
       )
       .then(({ data: { data } }) => {
         setExperienceProjects(data.allExperiences.reverse())
-        setProjects(data.allProjects)
+        setProjects(
+          data.allProjects.map((element) => {
+            return { ...element, stack: element.stack.split(",") }
+          })
+        )
       })
       .catch((err) => console.log(err))
   }, [])
@@ -149,27 +171,28 @@ const Projects = () => {
         <Wrapper directioncolumn={true}>
           <h2>Projects</h2>
           <ProjectsWrapper>
-            {projects.map(({ title, githublink, content, image }) => (
-              <Project
-                image={image.url}
-                title={title}
-                handleOpenProjects={() =>
-                  handleOpenProjects(githublink, image.url, title, content)
-                }
-              />
-            ))}
+            {projects.map(
+              ({ title, githublink, content, image, stack, websitelink }) => (
+                <Project
+                  image={image.url}
+                  title={title}
+                  handleOpenProjects={() =>
+                    handleOpenProjects(
+                      title,
+                      stack,
+                      content,
+                      githublink,
+                      websitelink,
+                      image.url
+                    )
+                  }
+                />
+              )
+            )}
           </ProjectsWrapper>
         </Wrapper>
       </SectionWrapper>
-      {show && (
-        <ProjectDetails
-          adress={adress}
-          setShow={setShow}
-          image={image}
-          title={title}
-          text={text}
-        />
-      )}
+      {show && <ProjectDetails setShow={setShow} openProject={openProject} />}
     </AnimateSection>
   )
 }
