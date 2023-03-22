@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
   position: relative;
+  margin: 20px;
   cursor: pointer;
   img {
     max-width: 100%;

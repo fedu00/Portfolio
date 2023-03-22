@@ -5,6 +5,7 @@ export const theme = {
     lightOrange: "#EDD6C1",
     navyBlue: "#3F4456",
     lightNavyBlue: "#555866",
+    greyBackground: "rgba(58, 58, 58, 0.7)",
   },
   fontSize: {
     xxl: "34px",
