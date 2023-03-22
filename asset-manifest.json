@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/wojtekfedak.portfolio/static/js/main.d3a9d62a.js",
+    "main.js": "/wojtekfedak.portfolio/static/js/main.f90f213b.js",
     "static/js/787.28cb0dcd.chunk.js": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/Wojtek Fedak CV.pdf": "/wojtekfedak.portfolio/static/media/Wojtek Fedak CV.ba61939d27f5841c037b.pdf",
     "static/media/aboutMyPicture.png": "/wojtekfedak.portfolio/static/media/aboutMyPicture.617c1f1f58834a3cc271.png",
@@ -11,15 +11,16 @@
     "static/media/linkedinSVG.svg": "/wojtekfedak.portfolio/static/media/linkedinSVG.30ee55be1fad6c7f719de5f22a142e8f.svg",
     "static/media/instaSVG.svg": "/wojtekfedak.portfolio/static/media/instaSVG.6cfc3fb46aeeb133ddeb573b2d34d098.svg",
     "static/media/facebookSVG.svg": "/wojtekfedak.portfolio/static/media/facebookSVG.13b1feb83d5ce9f5b047dc12720ad12e.svg",
+    "static/media/websiteSVG.svg": "/wojtekfedak.portfolio/static/media/websiteSVG.e61f1bac91327be305456fcd1836c042.svg",
     "index.html": "/wojtekfedak.portfolio/index.html",
     "static/media/JS.svg": "/wojtekfedak.portfolio/static/media/JS.f7939c392259aebeec33827dbd7bc3a9.svg",
     "static/media/css.svg": "/wojtekfedak.portfolio/static/media/css.0ec136899d7d3bbad8859af21b560056.svg",
     "static/media/TS.svg": "/wojtekfedak.portfolio/static/media/TS.e41e2b78998e93918ca949d928d8f307.svg",
-    "static/media/cross.svg": "/wojtekfedak.portfolio/static/media/cross.f0a0b8111f3b01b60d0298d1ed906bcc.svg",
-    "main.d3a9d62a.js.map": "/wojtekfedak.portfolio/static/js/main.d3a9d62a.js.map",
+    "static/media/cross.svg": "/wojtekfedak.portfolio/static/media/cross.d63b147aa20af173485e9f3d04c59726.svg",
+    "main.f90f213b.js.map": "/wojtekfedak.portfolio/static/js/main.f90f213b.js.map",
     "787.28cb0dcd.chunk.js.map": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d3a9d62a.js"
+    "static/js/main.f90f213b.js"
   ]
 }
