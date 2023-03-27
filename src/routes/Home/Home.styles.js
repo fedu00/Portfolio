@@ -61,9 +61,10 @@ export const TextWrapper = styled.div`
   }
   p:nth-of-type(2) {
     font-size: 24px;
+    color: ${({ theme }) => theme.colors.navyBlue};
   }
   @media (max-width: 1000px) {
-    p:first-of-type: {
+    p:first-of-type {
       font-size: 24px;
     }
     p:nth-of-type(2) {
@@ -71,7 +72,11 @@ export const TextWrapper = styled.div`
     }
   }
   @media (max-width: 500px) {
-    p:first-of-type: {
+    margin-top: 30px;
+    P {
+      margin: 10px 0;
+    }
+    p:first-of-type {
       font-size: 20px;
     }
     p:nth-of-type(2) {

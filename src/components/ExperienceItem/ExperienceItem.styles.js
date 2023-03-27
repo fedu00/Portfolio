@@ -2,46 +2,38 @@ import styled from "styled-components"
 
 export const ExperienceItemWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   padding: 10px;
-  margin-top: 10px;
-  @media (max-width: 500px) {
-    max-height: 350px;
-    width: 450px;
-  }
+  margin: 10px 0;
 `
 
-export const Date = styled.p`
-  width: 180px;
+export const Title = styled.p`
   font-weight: 600;
   font-size: 20px;
+  display: flex;
   color: ${({ theme }) => theme.colors.orange};
   margin: 5px;
+  p {
+    margin: 5px;
+  }
   @media (max-width: 800px) {
     font-size: 16px;
   }
-  @media (max-width: 500px) {
-    width: 80px;
+  @media (max-width: 400px) {
+    flex-direction: column;
   }
 `
 
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: calc(100% - 180px);
-  p:first-child {
-    font-size: 20px;
-    color: ${({ theme }) => theme.colors.orange};
-  }
+  margin: 0 0 0 50px;
   p {
     overflow-wrap: break-word;
     font-weight: 600;
     margin: 5px;
   }
   @media (max-width: 800px) {
-    p:first-child {
-      font-size: 16px;
-    }
+    margin: 0 0 0 20px;
   }
-  @media (max-width: 500px) {
-    width: calc(100% - 80px);
 `

@@ -30,11 +30,20 @@ export const Wrapper = styled.div`
     height: 40px;
     cursor: pointer;
   }
+  @media (max-width: 1000px) {
+    width: 700px;
+    height: 500px;
+  }
   @media (max-width: 800px) {
+    flex-direction: column;
+    height: 700px;
     width: 450px;
   }
   @media (max-width: 500px) {
-    width: 280px;
+    width: 400px;
+  }
+  @media (max-width: 400px) {
+    width: 290px;
   }
 `
 
@@ -44,8 +53,12 @@ export const ImmageWrapper = styled.div`
   background-image: ${({ image }) => `url(${image})`};
   background-repeat: no-repeat;
   margin: 15px;
+  @media (max-width: 1000px) {
+    height: 280px;
+    width: 280px;
+  }
   @media (max-width: 500px) {
-    height: 250px;
+    height: 220px;
     background-position: initial;
   }
 `
@@ -53,7 +66,7 @@ export const ImmageWrapper = styled.div`
 export const ContentWrapper = styled.div`
   color: white;
   display: flex;
-  width: calc(1000px - 400px);
+  width: 600px;
   padding: 20px;
   flex-direction: column;
   color: black;
@@ -61,13 +74,23 @@ export const ContentWrapper = styled.div`
     text-decoration: none;
     font-weight: 600;
   }
-  h2 {
+  h1 {
     text-align: center;
     font-weight: 400px;
+    margin: 10px 0;
   }
   p {
     margin: 8px 0;
     word-break: break-all;
+  }
+  @media (max-width: 1000px) {
+    width: 450px;
+  }
+  @media (max-width: 500px) {
+    width: 380px;
+  }
+  @media (max-width: 400px) {
+    width: 290px;
   }
 `
 
@@ -86,9 +109,15 @@ export const StackWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin: 20px 0;
+  @media (max-width: 500px) {
+    margin: 10px 0;
+  }
 `
 
 export const StackElement = styled.div`
   margin: 5px 8px;
   font-size: 18px;
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
 `

@@ -15,13 +15,13 @@ const About = () => {
             Hi! I am a Front-end developer, I write my applications in the React and
             React Native libraries. In addition to programming skills, I also have an
             eye for detail, which makes me great at the front. I have over a year of
-            commercial experience behind me and I am constantly improving my skills
+            commercial experience behind me, and I am constantly improving my skills
             as a developer.
           </p>
           <p>
-            In his free time, he also deals with designing, drawing, watching
-            automotive curiosities, exercising or immersing himself in a computer
-            game or series.
+            In my free time, I also deal with designing, drawing, watching automotive
+            curiosities, exercising or immersing himself in a computer game or
+            series.
           </p>
         </TextWrapper>
         <img src={myPicture} />
