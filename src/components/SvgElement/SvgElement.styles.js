@@ -24,6 +24,7 @@ export const Title = styled.p`
   font-weight: 600;
   font-size: 20px;
   text-align: center;
+  color: ${({ theme }) => theme.colors.navyBlue};
   @media (max-width: 1200px) {
     font-size: 16px;
   }

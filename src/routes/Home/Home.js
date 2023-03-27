@@ -19,8 +19,8 @@ const HomePage = () => {
             <p>I am front-end developer</p>
             <p>
               I am a programmer with a year of experience as a frontend developer.
-              for more details, please visit my github and if you are interested in
-              who I am, I have also prepared an article about it.
+              For more details, please visit my GitHub and if you are interested in
+              whom I am, I have also prepared an article about it.
             </p>
           </TextWrapper>
         </BorderWrapper>
