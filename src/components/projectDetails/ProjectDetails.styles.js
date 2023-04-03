@@ -13,8 +13,8 @@ export const WrapperOffset = styled.div`
 `
 
 export const Wrapper = styled.div`
-  width: 1000px;
-  height: 750px;
+  width: 70vw;
+  padding: 100px 50px;
   background-color: ${({ theme }) => theme.colors.backGroundColor};
   overflow: hidden;
   border-radius: 5px;
@@ -30,20 +30,17 @@ export const Wrapper = styled.div`
     height: 40px;
     cursor: pointer;
   }
-  @media (max-width: 1000px) {
-    width: 700px;
-    height: 500px;
+  @media (max-width: 1100px) {
+    width: 80vw;
+    padding: 50px 30px;
   }
   @media (max-width: 800px) {
     flex-direction: column;
-    height: 700px;
-    width: 450px;
+    width: 95vw;
+    padding: 20px;
   }
   @media (max-width: 500px) {
-    width: 400px;
-  }
-  @media (max-width: 400px) {
-    width: 290px;
+    padding: 15px 10px;
   }
 `
 
@@ -60,6 +57,11 @@ export const ImmageWrapper = styled.div`
   @media (max-width: 500px) {
     height: 220px;
     background-position: initial;
+    margin: 5px;
+  }
+  @media (max-width: 400px) {
+    height: 200px;
+    width: 200px;
   }
 `
 
@@ -83,14 +85,15 @@ export const ContentWrapper = styled.div`
     margin: 8px 0;
     word-break: break-all;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1400px) {
     width: 450px;
   }
   @media (max-width: 500px) {
     width: 380px;
+    padding: 10px;
   }
   @media (max-width: 400px) {
-    width: 290px;
+    width: 280px;
   }
 `
 
