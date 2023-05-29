@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/wojtekfedak.portfolio/static/js/main.639441bd.js",
+    "main.js": "/wojtekfedak.portfolio/static/js/main.2a2296b4.js",
     "static/js/787.28cb0dcd.chunk.js": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/Wojtek Fedak CV.pdf": "/wojtekfedak.portfolio/static/media/Wojtek Fedak CV.a962a225cb9f6f6ed7b5.pdf",
     "static/media/aboutMyPicture.png": "/wojtekfedak.portfolio/static/media/aboutMyPicture.617c1f1f58834a3cc271.png",
@@ -17,10 +17,10 @@
     "static/media/css.svg": "/wojtekfedak.portfolio/static/media/css.0ec136899d7d3bbad8859af21b560056.svg",
     "static/media/TS.svg": "/wojtekfedak.portfolio/static/media/TS.e41e2b78998e93918ca949d928d8f307.svg",
     "static/media/cross.svg": "/wojtekfedak.portfolio/static/media/cross.d63b147aa20af173485e9f3d04c59726.svg",
-    "main.639441bd.js.map": "/wojtekfedak.portfolio/static/js/main.639441bd.js.map",
+    "main.2a2296b4.js.map": "/wojtekfedak.portfolio/static/js/main.2a2296b4.js.map",
     "787.28cb0dcd.chunk.js.map": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.639441bd.js"
+    "static/js/main.2a2296b4.js"
   ]
 }
