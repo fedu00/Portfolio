@@ -1,57 +1,51 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom'
+import styled from "styled-components"
+import { GiHamburgerMenu } from "react-icons/gi"
 
-export const Wrapper = styled.div`
-  grid-row: 1/2;
-  grid-column: 2/2;
-  display: flex;
-  padding-right: 30px;
-  justify-content: flex-end;
-  align-items: center;
-    a { 
-    color: #3F4456;
-    text-decoration: none;
-    font-size: 24px;
-    margin-right: 15px
+export const MenuWrapper = styled.div`
+  .menu-transition-on {
+    transition: 1s;
+  }
+  ul {
+    position: fixed;
+    margin: 0;
+    right: 100px;
+    top: 16px;
+    overflow: hidden;
+    @media (max-width: 800px) {
+      visibility: hidden;
+      background-color: white;
+      top: 0;
+      right: -300px;
+      padding-top: 60px;
     }
-  @media (max-width: 600px) {
-    padding-right: 10px;
-    a {
-      font-size: 20px;
+    li {
+      text-decoration: none;
+      display: inline;
+      padding: 20px 20px;
+      font-weight: 700;
+      font-size: large;
+      cursor: pointer;
+      @media (max-width: 800px) {
+        display: block;
+        margin-right: 100px;
+      }
     }
   }
-  @media (max-width: 500px) {
-    a {
-      margin-right: 10px;
-      margin-top: 10px;
-    }
-  }
-  @media (max-width: 400px) {
-    padding-right: 0;
-    a { 
-      font-size: 16px;
-    }
+  .menu-active {
+    right: 0;
+    visibility: visible;
   }
 `
 
-export const StyledLink = styled(NavLink)`
-position: relative;
-&.${"active"} {
-  &::after {
-    opacity: 1;
+export const HamburgerMenu = styled(GiHamburgerMenu)`
+  display: none;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  @media (max-width: 800px) {
+    display: block;
   }
-  
-}
-
-&::after {
-  content: '';
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-  position: absolute;
-  width: 120%;
-  height: 3px;
-  bottom: -4px;
-  right: -10%;
-  background-color: ${({theme}) => theme.colors.navyBlue};
-}
 `

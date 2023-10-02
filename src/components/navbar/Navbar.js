@@ -1,15 +1,55 @@
-import { Wrapper, StyledLink } from "components/navbar/NavBar.styles"
+import { MenuWrapper, HamburgerMenu } from "components/navbar/NavBar.styles"
 
-const Navbar = () => {
+import { useRef, useState, useEffect } from "react"
+
+const Navbar = ({
+  toggleScrollToSection,
+  homeRef,
+  aboutRef,
+  projectsRef,
+  contactRef,
+}) => {
+  const menuRef = useRef(null)
+
+  const getCurrentWidth = () => {
+    return { width: window.innerWidth }
+  }
+  const [screenWidth, setScreenWidth] = useState(getCurrentWidth())
+  const [menuTransition, setMenuTransition] = useState(false)
+
+  useEffect(() => {
+    const updateScreenWidth = () => {
+      setScreenWidth(getCurrentWidth())
+    }
+    window.addEventListener("resize", updateScreenWidth)
+
+    return () => {
+      window.removeEventListener("resize", updateScreenWidth)
+    }
+  }, [screenWidth])
+
+  if (screenWidth.width <= 800) {
+    setTimeout(() => {
+      setMenuTransition(true)
+    }, 1000)
+  } else if (menuTransition === true && screenWidth.width >= 800) {
+    setMenuTransition(false)
+  }
+
+  const handleToggleMenuStyle = () => {
+    menuRef.current.classList.toggle("menu-active")
+  }
+
   return (
-    <Wrapper>
-      <StyledLink to="/wojtekfedak.portfolio/">Home Page</StyledLink>
-      <StyledLink to="/projects">Projects</StyledLink>
-      <StyledLink className="link" to="/about">
-        About
-      </StyledLink>
-      <StyledLink to="/contact">Contact</StyledLink>
-    </Wrapper>
+    <MenuWrapper>
+      <ul ref={menuRef} className={menuTransition ? "menu-transition-on" : ""}>
+        <li onClick={() => toggleScrollToSection(homeRef)}>Home</li>
+        <li onClick={() => toggleScrollToSection(aboutRef)}>About</li>
+        <li onClick={() => toggleScrollToSection(projectsRef)}>Projects</li>
+        <li onClick={() => toggleScrollToSection(contactRef)}>Contact</li>
+      </ul>
+      <HamburgerMenu onClick={handleToggleMenuStyle} togleTransition={false} />
+    </MenuWrapper>
   )
 }
 

@@ -7,7 +7,7 @@ import ProjectsStack from "components/ProjectsStack/ProjectsStack"
 import ProjectExperience from "components/ProjectsExperience/ProjectExperience"
 import ProjectsContainer from "components/ProjectsContainer/ProjectsContainer"
 
-const Projects = () => {
+const Projects = ({ projectsRef }) => {
   const [openProject, setOpenProject] = useState({
     title: "",
     stack: [],
@@ -89,21 +89,22 @@ const Projects = () => {
   }, [])
 
   return (
-    <AnimateSection>
-      <SectionWrapper>
-        <ProjectsStack />
-        <ProjectExperience
-          experienceProjects={experienceProjects}
-          setDropDownExperience={setDropDownExperience}
-          dropDownExperience={dropDownExperience}
-        />
-        <ProjectsContainer
-          projects={projects}
-          handleOpenProjects={handleOpenProjects}
-        />
-      </SectionWrapper>
+    // <AnimateSection>
+    <SectionWrapper ref={projectsRef}>
+      <ProjectsStack />
+      <ProjectExperience
+        experienceProjects={experienceProjects}
+        setDropDownExperience={setDropDownExperience}
+        dropDownExperience={dropDownExperience}
+      />
+      <ProjectsContainer
+        projects={projects}
+        handleOpenProjects={handleOpenProjects}
+      />
       {show && <ProjectDetails setShow={setShow} openProject={openProject} />}
-    </AnimateSection>
+    </SectionWrapper>
+
+    // </AnimateSection>
   )
 }
 
