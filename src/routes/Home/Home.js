@@ -1,31 +1,30 @@
-import AnimateSection from "../../components/AnimateSection/AnimateSection"
 import {
   SectionWrapper,
-  NameWrapper,
   TextWrapper,
-  BorderWrapper,
+  BackgroundImage,
+  MyImageWrapper,
 } from "routes/Home/Home.styles"
+
+import backgroundImage from "../../assetes/pictures/backgroundImage.png"
+import myImage from "../../assetes/pictures/aboutMyPicture.png"
 
 const HomePage = ({ homeRef }) => {
   return (
-    // <AnimateSection>
     <SectionWrapper ref={homeRef}>
-      <BorderWrapper>
-        <NameWrapper>
-          <p>Hi, my name is</p>
-          <p>Wojtek</p>
-        </NameWrapper>
-        <TextWrapper>
-          <p>I am front-end developer</p>
-          <p>
-            I am a programmer with a year of experience as a frontend developer. For
-            more details, please visit my GitHub and if you are interested in whom I
-            am, I have also prepared an article about it.
-          </p>
-        </TextWrapper>
-      </BorderWrapper>
+      <BackgroundImage src={backgroundImage} />
+      <TextWrapper>
+        <p>Hi, my name is Wojtek</p>
+        <p>I am front-end developer</p>
+        <p>
+          I am a programmer with a year of experience as a frontend developer. For
+          more details, please visit my GitHub and if you are interested in whom I
+          am, I have also prepared an article about it.
+        </p>
+      </TextWrapper>
+      <MyImageWrapper>
+        <img src={myImage} />
+      </MyImageWrapper>
     </SectionWrapper>
-    // </AnimateSection>
   )
 }
 

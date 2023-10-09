@@ -39,14 +39,45 @@ const Navbar = ({
   const handleToggleMenuStyle = () => {
     menuRef.current.classList.toggle("menu-active")
   }
+  const handleRemoveMenuStyle = () => {
+    menuRef.current.classList.remove("menu-active")
+  }
 
   return (
     <MenuWrapper>
       <ul ref={menuRef} className={menuTransition ? "menu-transition-on" : ""}>
-        <li onClick={() => toggleScrollToSection(homeRef)}>Home</li>
-        <li onClick={() => toggleScrollToSection(aboutRef)}>About</li>
-        <li onClick={() => toggleScrollToSection(projectsRef)}>Projects</li>
-        <li onClick={() => toggleScrollToSection(contactRef)}>Contact</li>
+        <li
+          onClick={() => {
+            toggleScrollToSection(homeRef)
+            handleRemoveMenuStyle()
+          }}
+        >
+          Home
+        </li>
+        <li
+          onClick={() => {
+            toggleScrollToSection(aboutRef)
+            handleRemoveMenuStyle()
+          }}
+        >
+          About
+        </li>
+        <li
+          onClick={() => {
+            toggleScrollToSection(projectsRef)
+            handleRemoveMenuStyle()
+          }}
+        >
+          Projects
+        </li>
+        <li
+          onClick={() => {
+            toggleScrollToSection(contactRef)
+            handleRemoveMenuStyle()
+          }}
+        >
+          Contact
+        </li>
       </ul>
       <HamburgerMenu onClick={handleToggleMenuStyle} togleTransition={false} />
     </MenuWrapper>

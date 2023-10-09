@@ -7,6 +7,7 @@ export const MenuWrapper = styled.div`
   }
   ul {
     position: fixed;
+    z-index: 1;
     margin: 0;
     right: 100px;
     top: 16px;
@@ -40,6 +41,7 @@ export const MenuWrapper = styled.div`
 export const HamburgerMenu = styled(GiHamburgerMenu)`
   display: none;
   position: fixed;
+  z-index: 2;
   top: 16px;
   right: 16px;
   cursor: pointer;

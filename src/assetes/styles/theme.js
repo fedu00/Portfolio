@@ -1,7 +1,8 @@
 export const theme = {
   colors: {
     orange: "#FF6700",
-    backGroundColor: "#F0F0F0",
+    backGroundColor: "#f8f8f8",
+    myGreen: "#1c7e75",
     lightOrange: "#EDD6C1",
     navyBlue: "#3F4456",
     lightNavyBlue: "#555866",

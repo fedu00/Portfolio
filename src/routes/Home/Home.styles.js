@@ -3,84 +3,111 @@ import styled from "styled-components"
 export const SectionWrapper = styled.div`
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-`
-export const BorderWrapper = styled.div`
-  width: 70%;
-  padding: 40px 60px;
-  font-weight: 600;
-  border-top: 2px solid ${({ theme }) => theme.colors.orange};
-  border-left: 2px solid ${({ theme }) => theme.colors.orange};
-  border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
+  padding: 0 200px;
+  overflow: hidden;
+  @media (max-width: 1400px) {
+    padding: 0 100px 0 200px;
+  }
+  @media (max-width: 1000px) {
+    padding: 0 50px 0 100px;
+  }
+  @media (max-width: 800px) {
+    padding: 0 50px;
+  }
   @media (max-width: 700px) {
-    width: 80%;
-    padding: 20px 30px;
+    padding: 0 25px;
   }
   @media (max-width: 500px) {
-    width: 85%;
-    padding: 20px 15px;
+    padding: 0 50px;
+  }
+  @media (max-width: 400px) {
+    padding: 0 25px;
   }
 `
 
-export const NameWrapper = styled.div`
+export const BackgroundImage = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  @media (max-width: 900px) {
+    width: 500px;
+  }
+  @media (max-width: 500px) {
+    width: 300px;
+  }
+`
+
+export const TextWrapper = styled.div`
+  max-width: 550px;
   p {
     margin: 0;
     color: ${({ theme }) => theme.colors.navyBlue};
   }
   p:first-of-type {
-    font-size: 70px;
+    font-size: 50px;
+    font-weight: 700;
   }
   p:nth-of-type(2) {
-    font-size: 96px;
+    font-size: 30px;
+    color: ${({ theme }) => theme.colors.myGreen};
   }
+  p:nth-of-type(3) {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+
   @media (max-width: 1000px) {
     p:first-of-type {
-      font-size: 55px;
+      font-size: 45px;
     }
     p:nth-of-type(2) {
-      font-size: 72px;
+      font-size: 25px;
+    }
+    p:nth-of-type(3) {
+      font-size: 18px;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     p:first-of-type {
       font-size: 40px;
     }
-    p:nth-of-type(2) {
-      font-size: 56px;
+    p:nth-of-type(3) {
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 1000px) {
+    p:nth-of-type(3) {
+      font-size: 22px;
     }
   }
 `
 
-export const TextWrapper = styled.div`
-  max-width: 500px;
-  margin-left: auto;
-  p:first-of-type {
-    font-size: 30px;
-    color: ${({ theme }) => theme.colors.orange};
-  }
-  p:nth-of-type(2) {
-    font-size: 24px;
-    color: ${({ theme }) => theme.colors.navyBlue};
-  }
-  @media (max-width: 1000px) {
-    p:first-of-type {
-      font-size: 24px;
+export const MyImageWrapper = styled.div`
+  position: relative;
+  margin: 10px;
+  img {
+    width: 400px;
+    @media (max-width: 1400px) {
+      width: 300px;
     }
-    p:nth-of-type(2) {
-      font-size: 20px;
+    @media (max-width: 700px) {
+      width: 250px;
     }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 17.5%;
+    right: -100%;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    background-color: ${({ theme }) => theme.colors.myGreen};
   }
   @media (max-width: 500px) {
-    margin-top: 30px;
-    P {
-      margin: 10px 0;
-    }
-    p:first-of-type {
-      font-size: 20px;
-    }
-    p:nth-of-type(2) {
-      font-size: 18px;
-    }
+    display: none;
   }
 `
