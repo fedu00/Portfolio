@@ -91,6 +91,7 @@ const Projects = ({ projectsRef }) => {
   return (
     // <AnimateSection>
     <SectionWrapper ref={projectsRef}>
+      <h2>Stack</h2>
       <ProjectsStack />
       <ProjectExperience
         experienceProjects={experienceProjects}

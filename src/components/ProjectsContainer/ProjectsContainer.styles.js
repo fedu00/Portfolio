@@ -2,10 +2,11 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
   width: 100%;
+  padding: 100px;
   display: flex;
+  flex-direction: column;
   > h2 {
     color: ${({ theme }) => theme.colors.navyBlue};
-    margin-left: 100px;
     font-size: 56px;
   }
   @media (max-width: 900px) {

@@ -10,7 +10,6 @@ import { Wrapper, RowSvgsWrapper } from "./ProjectsStack.styles"
 const ProjectsStack = () => {
   return (
     <Wrapper>
-      <h2>Stack</h2>
       <RowSvgsWrapper>
         <SvgElement svg={<ReactSVG />} title={"React & React Native"} />
         <SvgElement svg={<JsSVG />} title={"JavaScript"} />
