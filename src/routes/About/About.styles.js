@@ -1,99 +1,58 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  min-height: 100vh;
+  padding: 0 100px;
   display: flex;
-  align-items: flex-end;
-  padding: 100px 200px;
-  img {
-    width: 440px;
-    height: auto;
-    margin-left: 20px;
-  }
-  @media (max-width: 1700px) {
-    padding: 100px 100px 100px 50px;
-  }
-  @media (max-width: 1300px) {
-    padding: 100px 50px 50px 50px;
-    img {
-      width: 350px;
-    }
-  }
-  @media (max-width: 1000px) {
-    flex-direction: column;
-    max-height: calc(100vh - 50px);
-    overflow-y: scroll;
-    padding: 300px 0px 50px 20px;
-    align-items: center;
-    img {
-      width: 300px;
-      margin-top: 50px;
-    }
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1200px) {
+    padding: 0 50px 0 100px;
   }
   @media (max-width: 800px) {
-    padding-top: 200px;
-  }
-  @media (max-width: 500px) {
-    max-height: none;
-    height: 100%;
+    padding: 0 50px;
   }
 `
 
 export const TextWrapper = styled.div`
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 22px;
+  max-width: 800px;
   color: ${({ theme }) => theme.colors.navyBlue};
-  padding: 0 120px 50px 120px;
-  position: relative;
-  border-left: 2px solid ${({ theme }) => theme.colors.orange};
-  border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
   p:nth-of-type(1) {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
-  @media (max-width: 1700px) {
-    padding: 0 80px 50px 80px;
-    font-size: 22px;
-    p:nth-of-type(1) {
-      margin-bottom: 50px;
-    }
-  }
-  @media (max-width: 1300px) {
-    padding: 0 80px 0px 80px;
-    font-size: 20px;
-  }
-  @media (max-width: 800px) {
-    padding: 0 20px;
+  @media (max-width: 1000px) {
     font-size: 18px;
+    p:nth-of-type(1) {
+      margin-bottom: 20px;
+    }
   }
 `
 
-export const Title = styled.div`
-  content: "Wojtek Fedak";
-  color: ${({ theme }) => theme.colors.navyBlue};
-  position: absolute;
-  font-size: 100px;
-  top: -320px;
-  left: 50px;
-  h1 {
-    font-weight: 600;
-    font-size: 120px;
-    line-height: 60px;
+export const MyImageWrapper = styled.div`
+  position: relative;
+  margin: 10px 150px 10px 10px;
+  height: auto;
+  img {
+    width: 300px;
   }
-  h1:nth-of-type(2) {
-    margin-left: 100px;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -30%;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    background-color: ${({ theme }) => theme.colors.myGreen};
   }
-  @media (max-width: 1700px) {
-    top: -280px;
-    h1 {
-      font-size: 100px;
-      line-height: 50px;
+  @media (max-width: 1000px) {
+    margin: 10px 80px 10px 10px;
+    img {
+      width: 200px;
     }
   }
-  @media (max-width: 800px) {
-    top: -200px;
-    h1 {
-      font-size: 70px;
-      line-height: 40px;
-    }
+  @media (max-width: 600px) {
+    display: none;
   }
 `

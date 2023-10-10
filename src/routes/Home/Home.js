@@ -16,9 +16,10 @@ const HomePage = ({ homeRef }) => {
         <p>Hi, my name is Wojtek</p>
         <p>I am front-end developer</p>
         <p>
-          I am a programmer with a year of experience as a frontend developer. For
-          more details, please visit my GitHub and if you are interested in whom I
-          am, I have also prepared an article about it.
+          Hi! On the web you can find it as "fedu". I am a programmer with a year of
+          experience as a frontend developer, occasionally I also create graphic
+          designs and mock-ups. Below you can find more information about me and my
+          work.
         </p>
       </TextWrapper>
       <MyImageWrapper>

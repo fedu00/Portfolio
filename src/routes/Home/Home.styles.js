@@ -107,7 +107,7 @@ export const MyImageWrapper = styled.div`
     z-index: -1;
     background-color: ${({ theme }) => theme.colors.myGreen};
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     display: none;
   }
 `
