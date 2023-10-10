@@ -1,10 +1,12 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
+  margin: 100px 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   > h2 {
-    margin-left: 100px;
     font-size: 56px;
   }
   @media (max-width: 950px) {
@@ -16,45 +18,20 @@ export const Wrapper = styled.div`
   }
 `
 
-export const ButtonWrapper = styled.div`
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  button {
-    cursor: pointer;
-    font-size: 24px;
-    font-weight: 600;
-    border: none;
-    background-color: ${({ theme }) => theme.colors.orange};
-    color: white;
-    padding: 20px 25px;
-  }
-  @media (max-width: 1200px) {
-    button {
-      font-size: 20px;
-      padding: 15px;
-    }
-  }
-  @media (max-width: 800px) {
-    width: 100%;
-  }
-`
-
-export const BorderWrapper = styled.div`
-  width: 70%;
-  margin: 20px 100px;
-  border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
-  align-items: center;
-  justify-content: center;
+export const TextWrapper = styled.div`
+  max-width: 800px;
+  margin-bottom: 30px;
   h2 {
-    font-size: 56px;
+    font-size: 44px;
     color: ${({ theme }) => theme.colors.navyBlue};
   }
   > p {
     margin: 5px 0 5px 50px;
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 26px;
+    span {
+      font-weight: 600;
+      margin-right: 20px;
+    }
   }
   > p:nth-of-type(3) {
     margin: 50px 0 50px 50px;
@@ -70,8 +47,8 @@ export const BorderWrapper = styled.div`
     }
   }
   @media (max-width: 800px) {
-    width: 90%;
-    margin: 20px 0;
+    /* width: 90%;
+    margin: 20px 0; */
     h2 {
       font-size: 40px;
     }
@@ -84,19 +61,25 @@ export const BorderWrapper = styled.div`
   }
 `
 
-export const ExperienceButton = styled.div`
-  display: flex;
-  align-items: center;
+export const ButtonWrapper = styled.div`
+  margin: 10px;
   button {
-    margin: 0 auto;
     cursor: pointer;
     font-size: 24px;
     font-weight: 600;
-    border: none;
-    background-color: ${({ theme }) => theme.colors.orange};
-    color: white;
-    padding: 20px 25px;
-    margin-bottom: 15px;
+    border: 3px solid ${({ theme }) => theme.colors.myGreen};
+    border-radius: 30px;
+    background-color: ${({ theme }) => theme.colors.backGroundColor};
+    padding: 10px 15px;
+  }
+  @media (max-width: 1200px) {
+    button {
+      font-size: 20px;
+      padding: 15px;
+    }
+  }
+  @media (max-width: 800px) {
+    /* width: 100%; */
   }
 `
 

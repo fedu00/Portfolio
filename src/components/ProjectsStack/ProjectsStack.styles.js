@@ -2,8 +2,8 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
   width: 50%;
-  margin: 20px 100px;
-  border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
+  padding: 20px;
+  border: 2px solid ${({ theme }) => theme.colors.myGreen};
   align-items: center;
   justify-content: center;
   h2 {
@@ -40,5 +40,5 @@ export const RowSvgsWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 10px;
 `
