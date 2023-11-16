@@ -4,50 +4,35 @@ export const SectionWrapper = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`
-
-export const Wrapper = styled.div`
-  display: flex;
-  width: 70%;
-  border-top: 2px solid ${({ theme }) => theme.colors.orange};
-  border-left: 2px solid ${({ theme }) => theme.colors.orange};
-  border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
-  @media (max-width: 1400px) {
-    width: 90%;
-  }
 `
 
 export const ContentWrapper = styled.div`
   width: 100%;
   min-height: 30vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  p {
-    max-width: 500px;
+  flex-grow: 1;
+  h1 {
     font-size: 40px;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 26px;
+    max-width: 500px;
     font-weight: 600;
-    margin: 50px;
+    border-bottom: 3px solid ${({ theme }) => theme.colors.myGreen};
+    padding: 0 10px;
   }
   button {
-    background-color: ${({ theme }) => theme.colors.orange};
-    color: white;
-    padding: 15px 25px;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
     cursor: pointer;
-  }
-  @media (max-width: 900px) {
-    p {
-      font-size: 30px;
-    }
-  }
-
-  @media (max-width: 700px) {
-    flex-direction: column;
+    font-size: 24px;
+    font-weight: 600;
+    border: 3px solid ${({ theme }) => theme.colors.myGreen};
+    border-radius: 30px;
+    background-color: ${({ theme }) => theme.colors.backGroundColor};
+    padding: 10px 15px;
   }
 
   @media (max-width: 500px) {
