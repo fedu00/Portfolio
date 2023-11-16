@@ -37,7 +37,13 @@ function App() {
         <Home homeRef={homeRef} />
         <About aboutRef={aboutRef} />
         <Projects projectsRef={projectsRef} />
-        <Contact contactRef={contactRef} />
+        <Contact
+          contactRef={contactRef}
+          toggleScrollToSection={toggleScrollToSection}
+          homeRef={homeRef}
+          aboutRef={aboutRef}
+          projectsRef={projectsRef}
+        />
       </Wrapper>
     </ThemeProvider>
   )
