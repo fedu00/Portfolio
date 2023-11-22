@@ -2,9 +2,9 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 100px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   > h2 {
     color: ${({ theme }) => theme.colors.navyBlue};
     font-size: 56px;
@@ -27,5 +27,17 @@ export const ProjectsWrapper = styled.div`
   @media (max-width: 500px) {
     flex-direction: column;
     align-items: center;
+  }
+  > div:nth-child(even) {
+    flex-direction: row-reverse;
+    div:nth-child(2) {
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+  > div:nth-child(odd) {
+    div:nth-child(1) {
+      justify-content: flex-end;
+    }
   }
 `
