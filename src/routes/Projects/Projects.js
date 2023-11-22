@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import ProjectDetails from "../../components/projectDetails/ProjectDetails"
 import AnimateSection from "../../components/AnimateSection/AnimateSection"
 import { SectionWrapper } from "routes/Projects/Projects.styles"
 import axios from "axios"
@@ -8,40 +7,13 @@ import ProjectExperience from "components/ProjectsExperience/ProjectExperience"
 import ProjectsContainer from "components/ProjectsContainer/ProjectsContainer"
 
 const Projects = ({ projectsRef }) => {
-  const [openProject, setOpenProject] = useState({
-    title: "",
-    stack: [],
-    content: "",
-    githublink: "",
-    websiteLink: "",
-    image: "",
-  })
-
-  const [show, setShow] = useState(false)
   const [projects, setProjects] = useState([])
   const [experienceProjects, setExperienceProjects] = useState([])
   const [dropDownExperience, setDropDownExperience] = useState(false)
 
-  const handleOpenProjects = (
-    title,
-    stack,
-    content,
-    githubLink,
-    websiteLink,
-    image
-  ) => {
-    setOpenProject({
-      title,
-      stack,
-      content,
-      githubLink,
-      websiteLink,
-      image,
-    })
-    setShow(true)
-  }
-
   const API_TOKEN = "1ab3a70712337882e49d01c85666d9"
+
+  console.log("projects", projects)
 
   useEffect(() => {
     axios
@@ -64,6 +36,7 @@ const Projects = ({ projectsRef }) => {
                 content
                 githublink
                 websitelink
+                shoplink
                 image {
                   url
                 }
@@ -89,23 +62,17 @@ const Projects = ({ projectsRef }) => {
   }, [])
 
   return (
-    // <AnimateSection>
     <SectionWrapper ref={projectsRef}>
       <h2>Stack</h2>
+      <div></div>
       <ProjectsStack />
       <ProjectExperience
         experienceProjects={experienceProjects}
         setDropDownExperience={setDropDownExperience}
         dropDownExperience={dropDownExperience}
       />
-      <ProjectsContainer
-        projects={projects}
-        handleOpenProjects={handleOpenProjects}
-      />
-      {show && <ProjectDetails setShow={setShow} openProject={openProject} />}
+      <ProjectsContainer projects={projects} />
     </SectionWrapper>
-
-    // </AnimateSection>
   )
 }
 
