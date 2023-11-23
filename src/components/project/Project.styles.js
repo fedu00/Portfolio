@@ -2,18 +2,20 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
   width: 100%;
-  position: relative;
   margin: 40px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: ${({ theme }) => theme.colors.navyBlue};
+  padding-bottom: 20px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `
 
 export const ImageWrapper = styled.div`
   width: 30%;
   display: flex;
-  margin: 0 20px;
   img {
     max-height: 100%;
     max-width: 100%;
@@ -25,35 +27,54 @@ export const ImageWrapper = styled.div`
   @media (max-width: 1000px) {
     width: 50%;
   }
+  @media (max-width: 800px) {
+    width: 90%;
+    img {
+      margin: 0 auto;
+    }
+  }
   @media (max-width: 700px) {
-    margin: 0 10px;
+    margin: 0 15px;
   }
 `
 export const ContentWrapper = styled.div`
   width: 40%;
-  margin: 0 20px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   h1 {
-    margin: 6px 30px;
+    margin: 6px 0;
   }
   p {
-    margin: 6px;
+    margin: 6px 0;
   }
   @media (max-width: 1300px) {
     width: 50%;
   }
+  @media (max-width: 800px) {
+    width: 90%;
+  }
   @media (max-width: 700px) {
     margin: 0 10px;
+  }
+  @media (max-width: 400px) {
+    width: 95%;
   }
 `
 
 export const StackContainer = styled.ul`
   padding: 0;
-  margin: 10px 30px;
+  text-align: center;
+  margin: 10px;
   li {
     display: inline;
     margin: 5px;
     font-weight: bold;
+  }
+  @media (max-width: 500px) {
+    margin: 5px;
+    li {
+      margin: 3px;
+    }
   }
 `

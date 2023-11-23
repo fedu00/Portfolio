@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const LinkWrapper = styled.div`
-  margin: 10px 20px 0 20px;
+  margin-top: 10px;
   min-width: 140px;
   display: flex;
   a {

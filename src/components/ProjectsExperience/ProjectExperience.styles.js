@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   > h2 {
-    font-size: 56px;
+    font-size: 50px;
   }
   @media (max-width: 950px) {
     flex-direction: column;
@@ -16,27 +16,37 @@ export const Wrapper = styled.div`
       margin-left: 0;
     }
   }
+  @media (max-width: 600px) {
+    margin: 50px 0;
+  }
 `
 
 export const TextWrapper = styled.div`
   max-width: 800px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   h2 {
     font-size: 44px;
     color: ${({ theme }) => theme.colors.navyBlue};
   }
-  > p {
-    margin: 5px 0 5px 50px;
-    font-size: 26px;
-    span {
-      font-weight: 600;
+  div {
+    border-left: 3px solid ${({ theme }) => theme.colors.myGreen};
+    padding-left: 30px;
+    display: flex;
+    margin: 0;
+    p:nth-of-type(1) {
+      display: inline-block;
+      min-width: 220px;
       margin-right: 20px;
     }
+    p {
+      font-size: 26px;
+      margin: 5px 0;
+      color: ${({ theme }) => theme.colors.navyBlue};
+      span {
+        font-weight: 700;
+      }
+    }
   }
-  > p:nth-of-type(3) {
-    margin: 50px 0 50px 50px;
-  }
-
   @media (max-width: 1200px) {
     margin: 50px;
     > p {
@@ -47,16 +57,29 @@ export const TextWrapper = styled.div`
     }
   }
   @media (max-width: 800px) {
-    /* width: 90%;
-    margin: 20px 0; */
+    margin: 20px;
     h2 {
       font-size: 40px;
     }
-    > p {
-      margin: 5px 0 5px 0;
+    div {
+      padding-left: 15px;
+      p {
+        font-size: 20px;
+      }
+      p:nth-of-type(1) {
+        min-width: 165px;
+      }
     }
-    > p:nth-of-type(3) {
-      margin: 30px 0 20px 0;
+  }
+  @media (max-width: 500px) {
+    margin: 10px;
+    div {
+      p:nth-of-type(1) {
+        min-width: 130px;
+      }
+      p {
+        font-size: 16px;
+      }
     }
   }
 `
@@ -70,6 +93,7 @@ export const ButtonWrapper = styled.div`
     border: 3px solid ${({ theme }) => theme.colors.myGreen};
     border-radius: 30px;
     background-color: ${({ theme }) => theme.colors.backGroundColor};
+    color: ${({ theme }) => theme.colors.navyBlue};
     padding: 10px 15px;
   }
   @media (max-width: 1200px) {
@@ -77,9 +101,6 @@ export const ButtonWrapper = styled.div`
       font-size: 20px;
       padding: 15px;
     }
-  }
-  @media (max-width: 800px) {
-    /* width: 100%; */
   }
 `
 

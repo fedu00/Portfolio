@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   > h2 {
     color: ${({ theme }) => theme.colors.navyBlue};
-    font-size: 56px;
+    font-size: 50px;
   }
   @media (max-width: 900px) {
     flex-direction: column;
@@ -24,10 +24,6 @@ export const ProjectsWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  @media (max-width: 500px) {
-    flex-direction: column;
-    align-items: center;
-  }
   > div:nth-child(even) {
     flex-direction: row-reverse;
     div:nth-child(2) {
@@ -39,5 +35,18 @@ export const ProjectsWrapper = styled.div`
     div:nth-child(1) {
       justify-content: flex-end;
     }
+  }
+  @media (max-width: 800px) {
+    > div:nth-child(even) {
+      flex-direction: column;
+      div:nth-child(2) {
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
   }
 `
