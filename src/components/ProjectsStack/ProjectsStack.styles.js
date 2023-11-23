@@ -2,12 +2,13 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
   width: 50%;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
   border: 2px solid ${({ theme }) => theme.colors.myGreen};
   align-items: center;
   justify-content: center;
   h2 {
-    font-size: 56px;
+    font-size: 50px;
     color: ${({ theme }) => theme.colors.navyBlue};
   }
   > p {
@@ -33,6 +34,9 @@ export const Wrapper = styled.div`
     width: 90%;
     margin: 20px 0;
   }
+  @media (max-width: 400px) {
+    padding: 12px 0;
+  }
 `
 
 export const RowSvgsWrapper = styled.div`
@@ -41,4 +45,7 @@ export const RowSvgsWrapper = styled.div`
   flex-wrap: wrap;
   width: 100%;
   margin: 10px;
+  @media (max-width: 400px) {
+    margin: 0;
+  }
 `

@@ -11,7 +11,7 @@ export const Title = styled.p`
   font-weight: 600;
   font-size: 20px;
   display: flex;
-  color: ${({ theme }) => theme.colors.orange};
+  color: ${({ theme }) => theme.colors.myGreen};
   margin: 5px;
   p {
     margin: 5px;

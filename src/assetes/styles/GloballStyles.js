@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GloballStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600&display=swap');
 
 html {
     box-sizing: border-box;
@@ -14,10 +14,10 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 a, button {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 }
 `

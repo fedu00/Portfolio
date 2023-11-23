@@ -19,6 +19,10 @@ export const SectionWrapper = styled.div`
   @media (max-width: 700px) {
     padding: 0 25px;
   }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    min-height: auto;
+  }
   @media (max-width: 500px) {
     padding: 0 50px;
   }
@@ -78,10 +82,11 @@ export const TextWrapper = styled.div`
       margin-top: 15px;
     }
   }
-  @media (max-width: 1000px) {
-    p:nth-of-type(3) {
-      font-size: 22px;
-    }
+  @media (max-width: 600px) {
+    margin: 225px 0 20px 0;
+  }
+  @media (max-width: 500px) {
+    margin: 135px 0 20px 0;
   }
 `
 
@@ -106,8 +111,5 @@ export const MyImageWrapper = styled.div`
     width: 100%;
     z-index: -1;
     background-color: ${({ theme }) => theme.colors.myGreen};
-  }
-  @media (max-width: 600px) {
-    display: none;
   }
 `

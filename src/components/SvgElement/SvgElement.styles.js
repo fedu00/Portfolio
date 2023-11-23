@@ -18,6 +18,9 @@ export const Wrapper = styled.div`
       height: 40px;
     }
   }
+  @media (max-width: 400px) {
+    width: 80px;
+  }
 `
 
 export const Title = styled.p`

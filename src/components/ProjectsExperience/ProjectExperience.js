@@ -24,12 +24,18 @@ const ProjectExperience = ({
       ) : null}
       <TextWrapper>
         <h2>Where I’ve worked?</h2>
-        <p>
-          <span>10.2021 - 09.2022</span> Junior frontend developer at Geeknauts
-        </p>
-        <p>
-          <span>05.2021 - 10.2021</span> intern at Geeknauts
-        </p>
+        <div>
+          <p>
+            <span>10.2021 - 09.2022</span>
+          </p>
+          <p> Junior frontend developer at Geeknauts</p>
+        </div>
+        <div>
+          <p>
+            <span>05.2021 - 10.2021</span>
+          </p>
+          <p>intern at Geeknauts</p>
+        </div>
       </TextWrapper>
       <ButtonWrapper>
         <button onClick={() => setDropDownExperience(!dropDownExperience)}>

@@ -64,7 +64,6 @@ const Projects = ({ projectsRef }) => {
   return (
     <SectionWrapper ref={projectsRef}>
       <h2>Stack</h2>
-      <div></div>
       <ProjectsStack />
       <ProjectExperience
         experienceProjects={experienceProjects}
