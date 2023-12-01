@@ -30,6 +30,7 @@ export const TextWrapper = styled.div`
 
 export const MyImageWrapper = styled.div`
   position: relative;
+  z-index: -1;
   margin: 10px 150px 10px 10px;
   height: auto;
   img {

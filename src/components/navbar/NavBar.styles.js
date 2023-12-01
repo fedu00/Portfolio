@@ -1,20 +1,32 @@
 import styled from "styled-components"
 import { GiHamburgerMenu } from "react-icons/gi"
 
+export const MenuBackground = styled.div`
+  background-color: ${({ theme }) => theme.colors.backGroundColor};
+  height: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  @media (max-width: 800px) {
+    display: none;
+  }
+`
+
 export const MenuWrapper = styled.div`
   .menu-transition-on {
     transition: 1s;
   }
   ul {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     margin: 0;
     right: 100px;
     top: 16px;
     overflow: hidden;
     @media (max-width: 800px) {
       visibility: hidden;
-      background-color: white;
+      background-color: ${({ theme }) => theme.colors.backGroundColor};
       top: 0;
       right: -300px;
       padding-top: 60px;

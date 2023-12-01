@@ -35,12 +35,12 @@ export const BackgroundImage = styled.img`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  @media (max-width: 900px) {
-    width: 500px;
+  z-index: 2;
+  @media (max-width: 1100px) {
+    width: 50%;
   }
-  @media (max-width: 500px) {
-    width: 300px;
+  @media (max-width: 800px) {
+    width: 60%;
   }
 `
 
@@ -92,6 +92,7 @@ export const TextWrapper = styled.div`
 
 export const MyImageWrapper = styled.div`
   position: relative;
+  z-index: -1;
   margin: 10px;
   img {
     width: 400px;
