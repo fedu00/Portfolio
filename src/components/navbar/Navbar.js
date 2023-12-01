@@ -1,4 +1,8 @@
-import { MenuWrapper, HamburgerMenu } from "components/navbar/NavBar.styles"
+import {
+  MenuWrapper,
+  HamburgerMenu,
+  MenuBackground,
+} from "components/navbar/NavBar.styles"
 
 import { useRef, useState, useEffect } from "react"
 
@@ -45,6 +49,7 @@ const Navbar = ({
 
   return (
     <MenuWrapper>
+      <MenuBackground />
       <ul ref={menuRef} className={menuTransition ? "menu-transition-on" : ""}>
         <li
           onClick={() => {
