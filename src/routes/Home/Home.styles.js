@@ -61,6 +61,8 @@ export const TextWrapper = styled.div`
   p:nth-of-type(3) {
     font-size: 22px;
     margin-top: 40px;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   @media (max-width: 1000px) {

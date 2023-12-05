@@ -20,6 +20,7 @@ const Navbar = ({
   }
   const [screenWidth, setScreenWidth] = useState(getCurrentWidth())
   const [menuTransition, setMenuTransition] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
     const updateScreenWidth = () => {
@@ -38,10 +39,12 @@ const Navbar = ({
     }, 1000)
   } else if (menuTransition === true && screenWidth.width >= 800) {
     setMenuTransition(false)
+    setIsMenuOpen(false)
   }
 
   const handleToggleMenuStyle = () => {
     menuRef.current.classList.toggle("menu-active")
+    setIsMenuOpen(!isMenuOpen)
   }
   const handleRemoveMenuStyle = () => {
     menuRef.current.classList.remove("menu-active")
@@ -55,6 +58,7 @@ const Navbar = ({
           onClick={() => {
             toggleScrollToSection(homeRef)
             handleRemoveMenuStyle()
+            setIsMenuOpen(false)
           }}
         >
           Home
@@ -63,6 +67,7 @@ const Navbar = ({
           onClick={() => {
             toggleScrollToSection(aboutRef)
             handleRemoveMenuStyle()
+            setIsMenuOpen(false)
           }}
         >
           About
@@ -71,6 +76,7 @@ const Navbar = ({
           onClick={() => {
             toggleScrollToSection(projectsRef)
             handleRemoveMenuStyle()
+            setIsMenuOpen(false)
           }}
         >
           Projects
@@ -79,12 +85,21 @@ const Navbar = ({
           onClick={() => {
             toggleScrollToSection(contactRef)
             handleRemoveMenuStyle()
+            setIsMenuOpen(false)
           }}
         >
           Contact
         </li>
       </ul>
-      <HamburgerMenu onClick={handleToggleMenuStyle} togleTransition={false} />
+      <HamburgerMenu
+        onClick={handleToggleMenuStyle}
+        togleTransition={false}
+        isMenuOpen={isMenuOpen}
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </HamburgerMenu>
     </MenuWrapper>
   )
 }

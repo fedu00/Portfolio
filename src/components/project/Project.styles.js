@@ -47,6 +47,8 @@ export const ContentWrapper = styled.div`
   }
   p {
     margin: 6px 0;
+    text-align: justify;
+    text-justify: inter-word;
   }
   @media (max-width: 1300px) {
     width: 50%;

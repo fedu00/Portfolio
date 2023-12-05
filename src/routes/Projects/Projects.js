@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import AnimateSection from "../../components/AnimateSection/AnimateSection"
 import { SectionWrapper } from "routes/Projects/Projects.styles"
 import axios from "axios"
 import ProjectsStack from "components/ProjectsStack/ProjectsStack"
@@ -12,8 +11,6 @@ const Projects = ({ projectsRef }) => {
   const [dropDownExperience, setDropDownExperience] = useState(false)
 
   const API_TOKEN = "1ab3a70712337882e49d01c85666d9"
-
-  console.log("projects", projects)
 
   useEffect(() => {
     axios
@@ -54,7 +51,7 @@ const Projects = ({ projectsRef }) => {
         setExperienceProjects(data.allExperiences.reverse())
         setProjects(
           data.allProjects.map((element) => {
-            return { ...element, stack: element.stack.split(",") }
+            return { ...element, stack: element.stack.split(","), key: element.id }
           })
         )
       })

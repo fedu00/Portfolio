@@ -1,4 +1,3 @@
-import AnimateSection from "../../components/AnimateSection/AnimateSection"
 import React from "react"
 import { SectionWrapper, ContentWrapper } from "routes/Contact/Contact.styles"
 import useModal from "components/Modal/useModal"

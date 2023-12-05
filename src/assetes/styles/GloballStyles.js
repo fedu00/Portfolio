@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GloballStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600&display=swap');
 
 html {
     box-sizing: border-box;

@@ -1,5 +1,5 @@
 import useModal from "components/Modal/useModal"
-import CvFile from "assetes/files/Wojtek Fedak CV.pdf"
+import CvFile from "assetes/files/Wojciech Fedak CV.pdf"
 import {
   Wrapper,
   ButtonWrapper,
@@ -55,15 +55,20 @@ const ProjectExperience = ({
       </ButtonWrapper>
 
       <ExperienceWrapper dropDownExperience={dropDownExperience}>
-        {experienceProjects.map((project) => (
-          <ExperienceItem
-            title={project.title}
-            date={project.date}
-            role={project.role}
-            aboutProject={project.aboutProject}
-            technologies={project.technologies}
-          />
-        ))}
+        {experienceProjects.map(
+          ({ title, date, role, aboutProject, technologies }) => {
+            return (
+              <ExperienceItem
+                title={title}
+                date={date}
+                role={role}
+                aboutProject={aboutProject}
+                technologies={technologies}
+                key={title}
+              />
+            )
+          }
+        )}
       </ExperienceWrapper>
     </Wrapper>
   )

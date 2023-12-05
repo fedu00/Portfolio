@@ -1,9 +1,10 @@
 import styled from "styled-components"
 import { GiHamburgerMenu } from "react-icons/gi"
+// import { IoCloseSharp } from "react-icons/io5"
 
 export const MenuBackground = styled.div`
   background-color: ${({ theme }) => theme.colors.backGroundColor};
-  height: 50px;
+  height: 70px;
   position: fixed;
   left: 0;
   right: 0;
@@ -24,23 +25,31 @@ export const MenuWrapper = styled.div`
     right: 100px;
     top: 16px;
     overflow: hidden;
+    padding: 20px;
     @media (max-width: 800px) {
       visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
       background-color: ${({ theme }) => theme.colors.backGroundColor};
       top: 0;
-      right: -300px;
+      right: -100vw;
       padding-top: 60px;
     }
     li {
       text-decoration: none;
       display: inline;
-      padding: 20px 20px;
+      margin: 20px 20px;
+      padding: 0 5px 5px 5px;
       font-weight: 700;
       font-size: large;
+      border-bottom: 2px solid ${({ theme }) => theme.colors.myGreen};
       cursor: pointer;
       @media (max-width: 800px) {
         display: block;
-        margin-right: 100px;
       }
     }
   }
@@ -50,16 +59,40 @@ export const MenuWrapper = styled.div`
   }
 `
 
-export const HamburgerMenu = styled(GiHamburgerMenu)`
+export const HamburgerMenu = styled.div`
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
   display: none;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 16px;
   right: 16px;
   cursor: pointer;
-  height: 40px;
-  width: 40px;
+  width: 2rem;
+  height: 2rem;
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+
+    &:nth-child(1) {
+      transform: ${({ isMenuOpen }) => (isMenuOpen ? "rotate(45deg)" : "rotate(0)")};
+    }
+
+    &:nth-child(2) {
+      opacity: ${({ isMenuOpen }) => (isMenuOpen ? 0 : 1)};
+    }
+
+    &:nth-child(3) {
+      transform: ${({ isMenuOpen }) =>
+        isMenuOpen ? "rotate(-45deg)" : "rotate(0)"};
+    }
+  }
   @media (max-width: 800px) {
-    display: block;
+    display: flex;
   }
 `

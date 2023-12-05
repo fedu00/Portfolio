@@ -17,6 +17,10 @@ export const TextWrapper = styled.div`
   font-size: 22px;
   max-width: 800px;
   color: ${({ theme }) => theme.colors.navyBlue};
+  P {
+    text-align: justify;
+    text-justify: inter-word;
+  }
   p:nth-of-type(1) {
     margin-bottom: 50px;
   }

@@ -7,7 +7,7 @@ export const ExperienceItemWrapper = styled.div`
   margin: 10px 0;
 `
 
-export const Title = styled.p`
+export const Title = styled.div`
   font-weight: 600;
   font-size: 20px;
   display: flex;
