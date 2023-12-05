@@ -18,7 +18,7 @@ const Modal = ({ isOpen, handleCloseModal, text }) => {
   return ReactDOM.createPortal(
     <Wrapper>
       <p>{text}</p>
-      <button onClick={handleCloseModal}>close</button>
+      <button onClick={handleCloseModal}>CLOSE</button>
     </Wrapper>,
     modalNode
   )

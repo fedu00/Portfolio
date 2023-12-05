@@ -46,8 +46,7 @@ export const FooterMenu = styled.ul`
     display: inline;
     padding: 20px 20px;
     font-weight: 700;
-    font-size: large;
-    /* czy tu ma byc large? */
+    font-size: 18px;
     cursor: pointer;
   }
 `

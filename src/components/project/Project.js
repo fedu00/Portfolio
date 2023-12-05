@@ -28,7 +28,7 @@ const Project = ({
         <p>{content}</p>
         <StackContainer>
           {stack.map((element) => (
-            <li>{element}</li>
+            <li key={element}>{element}</li>
           ))}
         </StackContainer>
         {websitelink && (

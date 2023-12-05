@@ -87,6 +87,7 @@ export const TextWrapper = styled.div`
 export const ButtonWrapper = styled.div`
   margin: 10px;
   button {
+    min-width: 270px;
     cursor: pointer;
     font-size: 24px;
     font-weight: 600;

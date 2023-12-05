@@ -7,7 +7,16 @@ const ProjectsContainer = ({ projects }) => {
       <h2>Projects</h2>
       <ProjectsWrapper>
         {projects.map(
-          ({ title, githublink, content, image, stack, websitelink, shoplink }) => (
+          ({
+            title,
+            githublink,
+            content,
+            image,
+            stack,
+            websitelink,
+            shoplink,
+            id,
+          }) => (
             <Project
               image={image.url}
               title={title}
@@ -16,6 +25,7 @@ const ProjectsContainer = ({ projects }) => {
               stack={stack}
               websitelink={websitelink}
               shoplink={shoplink}
+              key={id}
             />
           )
         )}

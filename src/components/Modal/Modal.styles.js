@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  position: absolute;
+  position: fixed;
   background-color: ${({ theme }) => theme.colors.backGroundColor};
-  border: 1px solid ${({ theme }) => theme.colors.orange};
-  top: 50%;
+  border: 3px solid ${({ theme }) => theme.colors.myGreen};
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 15px 25px;
@@ -17,12 +17,22 @@ export const Wrapper = styled.div`
     font-weight: 600;
   }
   button {
+    cursor: pointer;
     border: none;
-    max-width: 200px;
     background-color: ${({ theme }) => theme.colors.orange};
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
+    border: 3px solid ${({ theme }) => theme.colors.myGreen};
+    border-radius: 30px;
+    background-color: ${({ theme }) => theme.colors.backGroundColor};
+    color: ${({ theme }) => theme.colors.navyBlue};
     padding: 10px 15px;
+  }
+  @media (max-width: 1200px) {
+    button {
+      font-size: 20px;
+      padding: 15px;
+    }
   }
 `
