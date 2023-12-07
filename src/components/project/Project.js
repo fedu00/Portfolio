@@ -3,6 +3,7 @@ import {
   ImageWrapper,
   ContentWrapper,
   StackContainer,
+  LinksContainer,
 } from "components/project/Project.styles"
 import ProjectLink from "../ProjectLInk/ProjectLink"
 import { ReactComponent as GithubSvg } from "assetes/svgIcons/githubSVG.svg"
@@ -31,23 +32,29 @@ const Project = ({
             <li key={element}>{element}</li>
           ))}
         </StackContainer>
-        {websitelink && (
-          <ProjectLink text="see demo" adress={websitelink} icon={<WebsiteSvg />} />
-        )}
-        {githublink && (
-          <ProjectLink
-            text="check github"
-            adress={githublink}
-            icon={<GithubSvg />}
-          />
-        )}
-        {shoplink && (
-          <ProjectLink
-            text="show in shop"
-            adress={shoplink}
-            icon={<GooglePlaySVG />}
-          />
-        )}
+        <LinksContainer>
+          {websitelink && (
+            <ProjectLink
+              text="see demo"
+              adress={websitelink}
+              icon={<WebsiteSvg />}
+            />
+          )}
+          {githublink && (
+            <ProjectLink
+              text="check github"
+              adress={githublink}
+              icon={<GithubSvg />}
+            />
+          )}
+          {shoplink && (
+            <ProjectLink
+              text="show in shop"
+              adress={shoplink}
+              icon={<GooglePlaySVG />}
+            />
+          )}
+        </LinksContainer>
       </ContentWrapper>
     </Wrapper>
   )

@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 export const LinkWrapper = styled.div`
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  margin: 10px;
   min-width: 140px;
   display: flex;
   a {
@@ -14,7 +15,8 @@ export const LinkWrapper = styled.div`
       width: 40px;
       margin-right: 10px;
       fill: ${({ theme }) => theme.colors.navyBlue};
-      stroke: ${({ theme }) => theme.colors.navyBlue};
+      /* fill: red; */
+      /* stroke: ${({ theme }) => theme.colors.navyBlue}; */
     }
     span {
     }
@@ -25,7 +27,7 @@ export const LinkWrapper = styled.div`
     }
     svg {
       fill: orange;
-      stroke: orange;
+      /* stroke: orange; */
     }
   }
 `
