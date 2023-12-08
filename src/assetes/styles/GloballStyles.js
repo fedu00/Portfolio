@@ -15,7 +15,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-a, button {
+a, button, h2, h4 {
     font-family: 'Poppins', sans-serif;
     
 }

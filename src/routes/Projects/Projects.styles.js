@@ -23,5 +23,6 @@ export const SectionWrapper = styled.div`
   }
   @media (max-width: 600px) {
     min-height: auto;
+    margin: 0;
   }
 `
