@@ -1,10 +1,8 @@
 import styled from "styled-components"
-import { GiHamburgerMenu } from "react-icons/gi"
-// import { IoCloseSharp } from "react-icons/io5"
 
 export const MenuBackground = styled.div`
   background-color: ${({ theme }) => theme.colors.backGroundColor};
-  height: 70px;
+  height: 55px;
   position: fixed;
   left: 0;
   right: 0;
@@ -23,9 +21,9 @@ export const MenuWrapper = styled.div`
     z-index: 3;
     margin: 0;
     right: 100px;
-    top: 16px;
+    top: 10px;
     overflow: hidden;
-    padding: 20px;
+    padding: 8px;
     @media (max-width: 800px) {
       visibility: hidden;
       display: flex;
@@ -74,7 +72,7 @@ export const HamburgerMenu = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: black;
+    background-color: ${({ theme }) => theme.colors.navyBlue};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;

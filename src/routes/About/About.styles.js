@@ -11,6 +11,9 @@ export const Wrapper = styled.div`
   @media (max-width: 800px) {
     padding: 0 50px;
   }
+  @media (max-width: 400px) {
+    padding: 0 25px;
+  }
 `
 
 export const TextWrapper = styled.div`
