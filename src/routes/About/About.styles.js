@@ -1,10 +1,8 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
+export const SectionWrapper = styled.div`
   padding: 0 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   @media (max-width: 1200px) {
     padding: 0 50px 0 100px;
   }
@@ -14,6 +12,12 @@ export const Wrapper = styled.div`
   @media (max-width: 400px) {
     padding: 0 25px;
   }
+`
+
+export const AboutWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 export const TextWrapper = styled.div`
