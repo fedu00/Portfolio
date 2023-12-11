@@ -5,21 +5,22 @@ import { ReactComponent as JsSVG } from "assetes/svgIcons/stackIcons/JS.svg"
 import { ReactComponent as TsSVG } from "assetes/svgIcons/stackIcons/TS.svg"
 import { ReactComponent as ReactSVG } from "assetes/svgIcons/stackIcons/react.svg"
 import { ReactComponent as FigmaSVG } from "assetes/svgIcons/stackIcons/figma.svg"
-import { Wrapper, RowSvgsWrapper } from "./ProjectsStack.styles"
+import { ReactComponent as SassSVG } from "assetes/svgIcons/stackIcons/sass.svg"
+import { Wrapper, SvgsWrapper } from "./ProjectsStack.styles"
 
 const ProjectsStack = () => {
   return (
     <Wrapper>
-      <RowSvgsWrapper>
+      <h1>Stack</h1>
+      <SvgsWrapper>
         <SvgElement svg={<ReactSVG />} title={"React & React Native"} />
         <SvgElement svg={<JsSVG />} title={"JavaScript"} />
         <SvgElement svg={<TsSVG />} title={"TypeScript"} />
-      </RowSvgsWrapper>
-      <RowSvgsWrapper>
         <SvgElement svg={<HtmlSVG />} title={"HTML5"} />
-        <SvgElement svg={<CssSVG />} title={"CSS & Sass"} />
+        <SvgElement svg={<CssSVG />} title={"CSS"} />
+        <SvgElement svg={<SassSVG />} title={"Sass"} />
         <SvgElement svg={<FigmaSVG />} title={"Figma & Art"} />
-      </RowSvgsWrapper>
+      </SvgsWrapper>
     </Wrapper>
   )
 }

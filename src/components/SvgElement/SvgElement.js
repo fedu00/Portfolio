@@ -1,10 +1,10 @@
-import { Wrapper, Title } from "./SvgElement.styles"
+import { Wrapper } from "./SvgElement.styles"
 
 const SvgElement = ({ svg, title }) => {
   return (
     <Wrapper>
       {svg}
-      <Title>{title}</Title>
+      <p>{title}</p>
     </Wrapper>
   )
 }
