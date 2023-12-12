@@ -23,12 +23,13 @@ export const ContentWrapper = styled.div`
     margin-bottom: 40px;
   }
   p {
-    margin: 16px 5px;
+    margin: 16px 5px 30px 5px;
     text-align: center;
     font-size: 26px;
     max-width: 500px;
     font-weight: 600;
     border-bottom: 3px solid ${({ theme }) => theme.colors.myGreen};
+
     padding: 0 10px;
     @media (max-width: 500px) {
       font-size: 20px;
