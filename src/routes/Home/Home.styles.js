@@ -27,9 +27,11 @@ export const SectionWrapper = styled.div`
       width: 201px;
     }
   }
+  @media (max-width: 900px) {
+    padding: 100px 50px 0 50px;
+  }
   @media (max-width: 800px) {
     min-height: auto;
-    padding: 100px 50px 0 50px;
   }
   @media (max-width: 600px) {
     padding: 0 50px;
@@ -68,7 +70,7 @@ export const TextWrapper = styled.div`
   p:nth-of-type(3) {
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     h1 {
       font-size: 45px;
     }

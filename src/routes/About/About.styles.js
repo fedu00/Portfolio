@@ -6,7 +6,7 @@ export const SectionWrapper = styled.div`
   @media (max-width: 1200px) {
     padding: 0 50px 0 100px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     padding: 0 50px;
   }
   @media (max-width: 400px) {
@@ -31,7 +31,7 @@ export const TextWrapper = styled.div`
   p:nth-of-type(1) {
     margin-bottom: 50px;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     font-size: 18px;
     p:nth-of-type(1) {
       margin-bottom: 20px;
@@ -57,14 +57,22 @@ export const MyImageWrapper = styled.div`
     width: 100%;
     z-index: -1;
     background-color: ${({ theme }) => theme.colors.myGreen};
+    @media (max-width: 1100px) {
+      right: -15%;
+    }
+  }
+  @media (max-width: 1100px) {
+    margin: 10px 80px 10px 10px;
+    img {
+      width: 250px;
+    }
   }
   @media (max-width: 1000px) {
-    margin: 10px 80px 10px 10px;
     img {
       width: 200px;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     display: none;
   }
 `

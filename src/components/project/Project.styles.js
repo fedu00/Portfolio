@@ -42,6 +42,7 @@ export const ContentWrapper = styled.div`
   padding: 0 30px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   h1 {
     margin: 6px 0;
   }

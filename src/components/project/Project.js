@@ -9,6 +9,7 @@ import ProjectLink from "../ProjectLInk/ProjectLink"
 import { ReactComponent as GithubSvg } from "assetes/svgIcons/githubSVG.svg"
 import { ReactComponent as WebsiteSvg } from "assetes/svgIcons/websiteSVG.svg"
 import { ReactComponent as GooglePlaySVG } from "assetes/svgIcons/googlePlaySVG.svg"
+import CustomButton from "components/CustomButton/CustomButton"
 
 const Project = ({
   title,
@@ -27,6 +28,7 @@ const Project = ({
       <ContentWrapper>
         <h1>{title}</h1>
         <p>{content}</p>
+
         <StackContainer>
           {stack.map((element) => (
             <li key={element}>{element}</li>
@@ -34,21 +36,21 @@ const Project = ({
         </StackContainer>
         <LinksContainer>
           {websitelink && (
-            <ProjectLink
-              text="see demo"
-              adress={websitelink}
+            <CustomButton
               icon={<WebsiteSvg />}
+              adress={websitelink}
+              text={"see demo"}
             />
           )}
           {githublink && (
-            <ProjectLink
+            <CustomButton
               text="check github"
               adress={githublink}
               icon={<GithubSvg />}
             />
           )}
           {shoplink && (
-            <ProjectLink
+            <CustomButton
               text="show in shop"
               adress={shoplink}
               icon={<GooglePlaySVG />}

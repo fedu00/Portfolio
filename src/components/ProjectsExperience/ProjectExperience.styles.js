@@ -84,27 +84,6 @@ export const TextWrapper = styled.div`
   }
 `
 
-export const ButtonWrapper = styled.div`
-  margin: 10px;
-  button {
-    min-width: 270px;
-    cursor: pointer;
-    font-size: 24px;
-    font-weight: 600;
-    border: 3px solid ${({ theme }) => theme.colors.myGreen};
-    border-radius: 30px;
-    background-color: ${({ theme }) => theme.colors.backGroundColor};
-    color: ${({ theme }) => theme.colors.navyBlue};
-    padding: 10px 15px;
-  }
-  @media (max-width: 1200px) {
-    button {
-      font-size: 20px;
-      padding: 15px;
-    }
-  }
-`
-
 export const ExperienceWrapper = styled.div`
   min-width: 500px;
   max-height: ${({ dropDownExperience }) => (dropDownExperience ? "2000px" : "0")};

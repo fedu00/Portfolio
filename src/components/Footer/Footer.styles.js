@@ -27,7 +27,7 @@ export const FooterIcons = styled.div`
   a {
     svg {
       height: 30px;
-      fill: ${({ theme }) => theme.colors.backGroundColor};
+      fill: ${({ theme }) => theme.colors.backgroundColor};
       margin: 10px;
       @media (max-width: 900px) {
         height: 25px;

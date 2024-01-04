@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
   position: fixed;
-  background-color: ${({ theme }) => theme.colors.backGroundColor};
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
   border: 3px solid ${({ theme }) => theme.colors.myGreen};
   top: 30%;
   left: 50%;
@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
     font-weight: 600;
     border: 3px solid ${({ theme }) => theme.colors.myGreen};
     border-radius: 30px;
-    background-color: ${({ theme }) => theme.colors.backGroundColor};
+    background-color: ${({ theme }) => theme.colors.backgroundColor};
     color: ${({ theme }) => theme.colors.navyBlue};
     padding: 10px 15px;
   }

@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   svg {
+    transition: 0.7s;
     height: 60px;
     margin: 0;
   }
@@ -15,6 +16,11 @@ export const Wrapper = styled.div`
     font-size: 20px;
     text-align: center;
     color: ${({ theme }) => theme.colors.navyBlue};
+  }
+  &&:hover {
+    svg {
+      transform: scale(1.3);
+    }
   }
   @media (max-width: 1200px) {
     width: 100px;

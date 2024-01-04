@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
 export const MenuBackground = styled.div`
-  background-color: ${({ theme }) => theme.colors.backGroundColor};
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
   height: 55px;
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: 1;
   @media (max-width: 800px) {
     display: none;
   }
@@ -32,7 +32,7 @@ export const MenuWrapper = styled.div`
       width: 100vw;
       align-items: center;
       justify-content: center;
-      background-color: ${({ theme }) => theme.colors.backGroundColor};
+      background-color: ${({ theme }) => theme.colors.backgroundColor};
       top: 0;
       right: -100vw;
       padding-top: 60px;
