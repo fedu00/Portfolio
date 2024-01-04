@@ -15,8 +15,6 @@ export const LinkWrapper = styled.div`
       width: 40px;
       margin-right: 10px;
       fill: ${({ theme }) => theme.colors.navyBlue};
-      /* fill: red; */
-      /* stroke: ${({ theme }) => theme.colors.navyBlue}; */
     }
     span {
     }

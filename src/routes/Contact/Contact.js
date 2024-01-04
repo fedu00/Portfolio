@@ -2,6 +2,7 @@ import React from "react"
 import { SectionWrapper, ContentWrapper } from "routes/Contact/Contact.styles"
 import useModal from "components/Modal/useModal"
 import Footer from "components/Footer/Footer"
+import CustomButton from "components/CustomButton/CustomButton"
 
 const Contact = ({
   contactRef,
@@ -26,7 +27,7 @@ const Contact = ({
       <ContentWrapper>
         <h1>Contact</h1>
         <p>Don't be shy, send a message!</p>
-        <button onClick={handleCopyEmail}>CLICK TO COPY E-MAIL</button>
+        <CustomButton text="CLICK TO COPY E-MAIL" onClick={handleCopyEmail} />
       </ContentWrapper>
       <Footer
         toggleScrollToSection={toggleScrollToSection}

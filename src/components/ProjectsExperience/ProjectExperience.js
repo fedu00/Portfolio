@@ -1,12 +1,8 @@
 import useModal from "components/Modal/useModal"
 import CvFile from "assetes/files/Wojciech Fedak CV.pdf"
-import {
-  Wrapper,
-  ButtonWrapper,
-  TextWrapper,
-  ExperienceWrapper,
-} from "./ProjectExperience.styles"
+import { Wrapper, TextWrapper, ExperienceWrapper } from "./ProjectExperience.styles"
 import ExperienceItem from "components/ExperienceItem/ExperienceItem"
+import CustomButton from "components/CustomButton/CustomButton"
 
 const ProjectExperience = ({
   setDropDownExperience,
@@ -37,23 +33,17 @@ const ProjectExperience = ({
           <p>intern at Geeknauts</p>
         </div>
       </TextWrapper>
-      <ButtonWrapper>
-        <button onClick={() => setDropDownExperience(!dropDownExperience)}>
-          SHOW MY WORK
-        </button>
-      </ButtonWrapper>
-      <ButtonWrapper>
-        <a href={CvFile} download="Wojtek Fedak CV" target="_blank">
-          <button
-            onClick={() => {
-              handleOpenModal()
-            }}
-          >
-            DOWNLOAD MY CV
-          </button>
-        </a>
-      </ButtonWrapper>
-
+      <CustomButton
+        buttonMinWidth={"210px"}
+        text="SHOW MY WORK"
+        onClick={() => setDropDownExperience(!dropDownExperience)}
+      />
+      <CustomButton
+        text="DOWNLOAD MY CV"
+        download="Wojtek Fedak CV"
+        onClick={handleOpenModal}
+        adress={CvFile}
+      />
       <ExperienceWrapper dropDownExperience={dropDownExperience}>
         {experienceProjects.map(
           ({ title, date, role, aboutProject, technologies }) => {

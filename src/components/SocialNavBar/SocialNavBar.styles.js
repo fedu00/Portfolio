@@ -15,13 +15,13 @@ export const SocialNavBarContainer = styled.div`
     transition: all 0.4s linear;
     svg {
       height: 30px;
-      fill: ${({ theme }) => theme.colors.backGroundColor};
+      fill: ${({ theme }) => theme.colors.backgroundColor};
     }
   }
   a:hover {
     scale: 1.4;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `
