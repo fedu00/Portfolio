@@ -3,6 +3,7 @@ import CvFile from "assetes/files/Wojciech Fedak CV.pdf"
 import { Wrapper, TextWrapper, ExperienceWrapper } from "./ProjectExperience.styles"
 import ExperienceItem from "components/ExperienceItem/ExperienceItem"
 import CustomButton from "components/CustomButton/CustomButton"
+import { ReactComponent as DownloadSVG } from "assetes/svgIcons/downloadIcon.svg"
 
 const ProjectExperience = ({
   setDropDownExperience,
@@ -10,16 +11,18 @@ const ProjectExperience = ({
   experienceProjects,
 }) => {
   const { Modal, isOpen, handleOpenModal, handleCloseModal } = useModal()
+  console.log("isOpen2", isOpen)
   return (
     <Wrapper>
       {isOpen ? (
         <Modal
+          icon={<DownloadSVG />}
           handleCloseModal={handleCloseModal}
-          text="You have downloaded my CV!"
+          text="Thank you for downloading my CV. I hope my qualifications meet your expectations, and we will be in touch soon!"
         />
       ) : null}
       <TextWrapper>
-        <h2>Where I’ve worked?</h2>
+        <h2>Where I've worked?</h2>
         <div>
           <p>
             <span>10.2021 - 09.2022</span>
