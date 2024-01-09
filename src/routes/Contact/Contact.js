@@ -3,6 +3,7 @@ import { SectionWrapper, ContentWrapper } from "routes/Contact/Contact.styles"
 import useModal from "components/Modal/useModal"
 import Footer from "components/Footer/Footer"
 import CustomButton from "components/CustomButton/CustomButton"
+import { ReactComponent as EmailIcon } from "assetes/svgIcons/emailIcon.svg"
 
 const Contact = ({
   contactRef,
@@ -20,8 +21,9 @@ const Contact = ({
     <SectionWrapper ref={contactRef}>
       {isOpen ? (
         <Modal
+          icon={<EmailIcon />}
           handleCloseModal={handleCloseModal}
-          text="Successful email copying!"
+          text="You have successfully copied the email address. I will respond as soon as possible."
         />
       ) : null}
       <ContentWrapper>

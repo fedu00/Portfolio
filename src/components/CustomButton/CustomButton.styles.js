@@ -39,12 +39,11 @@ export const ButtonWrapper = styled.button`
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
+    width: 0%;
     z-index: -1;
     border-radius: 30px;
     background-color: ${({ theme }) => theme.colors.myGreen};
-    transition: transform 300ms ease-in-out;
-    transform: scaleX(0);
+    transition: width 300ms ease-in-out;
     transform-origin: left;
   }
   a svg {
@@ -62,7 +61,7 @@ export const ButtonWrapper = styled.button`
       color: ${({ theme }) => theme.colors.backgroundColor};
     }
     &::before {
-      transform: scaleX(1);
+      width: 100%;
     }
     a svg {
       fill: ${({ theme }) => theme.colors.backgroundColor};

@@ -1,11 +1,18 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import ReactDOM from "react-dom"
-import { Wrapper } from "./Modal.styles"
+import { BacgroundShadow, PopUpWrapper } from "./Modal.styles"
+import CustomButton from "components/CustomButton/CustomButton"
 
 const modalContainer = document.getElementById("modal-container")
 
-const Modal = ({ isOpen, handleCloseModal, text }) => {
+const Modal = ({ handleCloseModal, icon, text }) => {
+  const [popUpClasActive, setPopUpClasActive] = useState("active")
   const modalNode = document.createElement("div")
+
+  const handleCloseWithAnimation = () => {
+    setPopUpClasActive("disActive")
+    setTimeout(handleCloseModal, 300)
+  }
 
   useEffect(() => {
     modalContainer.appendChild(modalNode)
@@ -16,10 +23,13 @@ const Modal = ({ isOpen, handleCloseModal, text }) => {
   }, [modalNode])
 
   return ReactDOM.createPortal(
-    <Wrapper>
-      <p>{text}</p>
-      <button onClick={handleCloseModal}>CLOSE</button>
-    </Wrapper>,
+    <BacgroundShadow className={popUpClasActive}>
+      <PopUpWrapper className={popUpClasActive}>
+        {icon}
+        <p>{text}</p>
+        <CustomButton onClick={handleCloseWithAnimation} text="CLOSE" />
+      </PopUpWrapper>
+    </BacgroundShadow>,
     modalNode
   )
 }
