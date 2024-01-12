@@ -14,11 +14,10 @@ export const ButtonWrapper = styled.button`
   transition: color 300ms ease-in-out;
   z-index: 0;
   overflow: hidden;
-  margin: 5px;
   p {
     padding: 11px 22px;
     margin: 0;
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.fontSize.s};
     color: ${({ theme }) => theme.colors.myGreen};
 
     transition: color 300ms ease-in-out;
@@ -26,7 +25,7 @@ export const ButtonWrapper = styled.button`
   a {
     text-decoration: none;
     margin: 0;
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.fontSize.s};
     color: ${({ theme }) => theme.colors.myGreen};
     display: flex;
     align-items: center;
@@ -68,13 +67,6 @@ export const ButtonWrapper = styled.button`
     }
     a span {
       color: ${({ theme }) => theme.colors.backgroundColor};
-    }
-  }
-  @media (max-width: 400px) {
-    a,
-    p {
-      font-size: 14px;
-      padding: 9px 18px;
     }
   }
 `

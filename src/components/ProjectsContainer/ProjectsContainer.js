@@ -4,7 +4,7 @@ import { Wrapper, ProjectsWrapper } from "./ProjectsContainer.styles"
 const ProjectsContainer = ({ projects }) => {
   return (
     <Wrapper>
-      <h2>Projects</h2>
+      <h1>Projects</h1>
       <ProjectsWrapper>
         {projects.map(
           ({

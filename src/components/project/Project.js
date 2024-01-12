@@ -5,7 +5,6 @@ import {
   StackContainer,
   LinksContainer,
 } from "components/project/Project.styles"
-import ProjectLink from "../ProjectLInk/ProjectLink"
 import { ReactComponent as GithubSvg } from "assetes/svgIcons/githubSVG.svg"
 import { ReactComponent as WebsiteSvg } from "assetes/svgIcons/websiteSVG.svg"
 import { ReactComponent as GooglePlaySVG } from "assetes/svgIcons/googlePlaySVG.svg"

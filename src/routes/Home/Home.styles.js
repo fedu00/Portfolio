@@ -36,7 +36,7 @@ export const SectionWrapper = styled.div`
   @media (max-width: 600px) {
     padding: 0 50px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     flex-direction: column;
   }
   @media (max-width: 400px) {
@@ -50,19 +50,19 @@ export const TextWrapper = styled.div`
   p {
     margin: 0;
     color: ${({ theme }) => theme.colors.navyBlue};
-    font-size: 22px;
-    margin-top: 40px;
+    font-size: ${({ theme }) => theme.fontSize.l};
+    margin-top: ${({ theme }) => theme.marginSize.xxlMargin};
     text-align: justify;
     text-justify: inter-word;
   }
   h1 {
     margin: 0;
-    font-size: 50px;
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
     color: ${({ theme }) => theme.colors.navyBlue};
     font-weight: 700;
   }
   h4 {
-    margin: 5px;
+    margin: 0;
     font-size: 30px;
     font-weight: 500;
     color: ${({ theme }) => theme.colors.myGreen};
@@ -72,13 +72,13 @@ export const TextWrapper = styled.div`
 
   @media (max-width: 1100px) {
     h1 {
-      font-size: 45px;
+      font-size: ${({ theme }) => theme.fontSize.xxl};
     }
     h4 {
-      font-size: 25px;
+      font-size: ${({ theme }) => theme.fontSize.xl};
     }
     p {
-      font-size: 18px;
+      font-size: ${({ theme }) => theme.fontSize.m};
       margin-top: 15px;
     }
   }
@@ -87,11 +87,20 @@ export const TextWrapper = styled.div`
       font-size: 32px;
     }
     h4 {
-      font-size: 22px;
+      font-size: ${({ theme }) => theme.fontSize.l};
     }
   }
   @media (max-width: 600px) {
     margin: 135px 0 20px 0;
+    h1 {
+      font-size: ${({ theme }) => theme.fontSize.xl};
+    }
+    h4 {
+      font-size: ${({ theme }) => theme.fontSize.m};
+    }
+    p {
+      font-size: ${({ theme }) => theme.fontSize.s};
+    }
   }
 `
 

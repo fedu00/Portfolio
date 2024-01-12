@@ -21,6 +21,39 @@ const Navbar = ({
   const [screenWidth, setScreenWidth] = useState(getCurrentWidth())
   const [menuTransition, setMenuTransition] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState("home")
+  const [scroll, setScroll] = useState(window.scrollY)
+
+  document.addEventListener("scroll", () => {
+    const currentPagePosition = window.scrollY
+    setScroll(currentPagePosition)
+  })
+
+  useEffect(() => {
+    const aboutSectionPosition = aboutRef.current.offsetTop - 700
+    const projectsSectionPosition = projectsRef.current.offsetTop - 700
+    const contactSectionPosition = contactRef.current.offsetTop - 700
+    const isItHomeSection = scroll < aboutSectionPosition && activeSection != "home"
+    const isItAboutSection =
+      scroll >= aboutSectionPosition &&
+      scroll < projectsSectionPosition &&
+      activeSection != "about"
+    const isItProjectsSection =
+      scroll >= projectsSectionPosition &&
+      scroll < contactSectionPosition &&
+      activeSection != "projects"
+    const isItContactSection =
+      scroll >= contactSectionPosition && activeSection != "contact"
+    if (isItHomeSection) {
+      setActiveSection("home")
+    } else if (isItAboutSection) {
+      setActiveSection("about")
+    } else if (isItProjectsSection) {
+      setActiveSection("projects")
+    } else if (isItContactSection) {
+      setActiveSection("contact")
+    }
+  }, [scroll])
 
   useEffect(() => {
     const updateScreenWidth = () => {
@@ -55,6 +88,7 @@ const Navbar = ({
       <MenuBackground />
       <ul ref={menuRef} className={menuTransition ? "menu-transition-on" : ""}>
         <li
+          className={activeSection === "home" ? "active" : ""}
           onClick={() => {
             toggleScrollToSection(homeRef)
             handleRemoveMenuStyle()
@@ -64,6 +98,7 @@ const Navbar = ({
           Home
         </li>
         <li
+          className={activeSection === "about" ? "active" : ""}
           onClick={() => {
             toggleScrollToSection(aboutRef)
             handleRemoveMenuStyle()
@@ -73,6 +108,7 @@ const Navbar = ({
           About
         </li>
         <li
+          className={activeSection === "projects" ? "active" : ""}
           onClick={() => {
             toggleScrollToSection(projectsRef)
             handleRemoveMenuStyle()
@@ -82,6 +118,7 @@ const Navbar = ({
           Projects
         </li>
         <li
+          className={activeSection === "contact" ? "active" : ""}
           onClick={() => {
             toggleScrollToSection(contactRef)
             handleRemoveMenuStyle()

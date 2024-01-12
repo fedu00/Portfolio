@@ -44,11 +44,19 @@ export const MenuWrapper = styled.div`
       padding: 0 5px 5px 5px;
       font-weight: 700;
       font-size: large;
-      border-bottom: 2px solid ${({ theme }) => theme.colors.myGreen};
+      border-bottom: 0px solid ${({ theme }) => theme.colors.myGreen};
       cursor: pointer;
       @media (max-width: 800px) {
         display: block;
       }
+    }
+    li:hover {
+      color: ${({ theme }) => theme.colors.myGreen};
+      border-width: 1px;
+    }
+    .active {
+      color: ${({ theme }) => theme.colors.myGreen};
+      border-width: 1px;
     }
   }
   .menu-active {

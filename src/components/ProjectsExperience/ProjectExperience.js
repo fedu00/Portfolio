@@ -22,30 +22,30 @@ const ProjectExperience = ({
         />
       ) : null}
       <TextWrapper>
-        <h2>Where I've worked?</h2>
+        <h1>Where I've worked?</h1>
         <div>
           <p>
-            <span>10.2021 - 09.2022</span>
+            <span>10.2021-09.2022</span>
           </p>
           <p> Junior frontend developer at Geeknauts</p>
         </div>
         <div>
           <p>
-            <span>05.2021 - 10.2021</span>
+            <span>05.2021-10.2021</span>
           </p>
           <p>intern at Geeknauts</p>
         </div>
       </TextWrapper>
       <CustomButton
-        buttonMinWidth={"210px"}
-        text="SHOW MY WORK"
-        onClick={() => setDropDownExperience(!dropDownExperience)}
-      />
-      <CustomButton
         text="DOWNLOAD MY CV"
         download="Wojtek Fedak CV"
         onClick={handleOpenModal}
         adress={CvFile}
+      />
+      <CustomButton
+        buttonMinWidth={"210px"}
+        text="SHOW MY WORK"
+        onClick={() => setDropDownExperience(!dropDownExperience)}
       />
       <ExperienceWrapper dropDownExperience={dropDownExperience}>
         {experienceProjects.map(
