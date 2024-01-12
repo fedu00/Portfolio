@@ -1,22 +1,21 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  margin: 100px 0;
+  margin-top: ${({ theme }) => theme.marginSize.containerMargin};
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  > h2 {
-    font-size: 50px;
+  button:first-of-type {
+    margin-bottom: ${({ theme }) => theme.marginSize.mediumMargin};
   }
-  @media (max-width: 950px) {
+  @media (max-width: 1000px) {
+    margin-top: ${({ theme }) => theme.marginSize.constainerSmallMargin};
     flex-direction: column;
     align-items: center;
-    > h2 {
-      margin-left: 0;
-    }
   }
   @media (max-width: 600px) {
+    margin-top: ${({ theme }) => theme.marginSize.constainerXsMargin};
     margin: 50px 0;
   }
 `
@@ -24,22 +23,24 @@ export const Wrapper = styled.div`
 export const TextWrapper = styled.div`
   max-width: 800px;
   margin-bottom: 40px;
-  h2 {
-    font-size: 44px;
+  h1 {
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
     color: ${({ theme }) => theme.colors.navyBlue};
+    text-align: center;
+    margin: 0 0 ${({ theme }) => theme.marginSize.xxlMargin} 0;
   }
   div {
     border-left: 3px solid ${({ theme }) => theme.colors.myGreen};
     padding-left: 30px;
     display: flex;
-    margin: 0;
+
     p:nth-of-type(1) {
       display: inline-block;
       min-width: 220px;
       margin-right: 20px;
     }
     p {
-      font-size: 26px;
+      font-size: ${({ theme }) => theme.fontSize.l};
       margin: 5px 0;
       color: ${({ theme }) => theme.colors.navyBlue};
       span {
@@ -47,38 +48,43 @@ export const TextWrapper = styled.div`
       }
     }
   }
-  @media (max-width: 1200px) {
-    margin: 50px;
-    > p {
-      font-size: 16px;
+  @media (max-width: 1100px) {
+    h1 {
+      font-size: ${({ theme }) => theme.fontSize.xxl};
     }
-    h2 {
-      margin-top: 0;
+    div {
+      p {
+        font-size: ${({ theme }) => theme.fontSize.m};
+      }
     }
   }
   @media (max-width: 800px) {
-    margin: 20px;
-    h2 {
-      font-size: 40px;
+    h1 {
+      font-size: 32px;
     }
     div {
-      padding-left: 15px;
-      p {
-        font-size: 20px;
-      }
+      padding-left: ${({ theme }) => theme.paddingSize.smallPadding};
       p:nth-of-type(1) {
         min-width: 165px;
+        margin-right: ${({ theme }) => theme.marginSize.mediumMargin};
       }
     }
   }
-  @media (max-width: 500px) {
-    margin: 10px;
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: ${({ theme }) => theme.fontSize.xl};
+      margin: 0 0 ${({ theme }) => theme.marginSize.xlMargin} 0;
+    }
+    div {
+      p {
+        font-size: ${({ theme }) => theme.fontSize.s};
+      }
+    }
+
     div {
       p:nth-of-type(1) {
         min-width: 130px;
-      }
-      p {
-        font-size: 16px;
       }
     }
   }

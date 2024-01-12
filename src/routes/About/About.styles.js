@@ -1,16 +1,21 @@
 import styled from "styled-components"
 
 export const SectionWrapper = styled.div`
-  padding: 0 100px;
-
-  @media (max-width: 1200px) {
-    padding: 0 50px 0 100px;
+  padding: 0 ${({ theme }) => theme.paddingSize.sectionPadding};
+  @media (max-width: 1400px) {
+    margin-top: ${({ theme }) => theme.marginSize.sectionMargin};
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     padding: 0 50px;
   }
-  @media (max-width: 400px) {
-    padding: 0 25px;
+  @media (max-width: 1000px) {
+    margin-top: ${({ theme }) => theme.marginSize.containerBigMargin};
+  }
+  @media (max-width: 600px) {
+    margin-top: ${({ theme }) => theme.marginSize.containerMargin};
+  }
+  @media (max-width: 500px) {
+    padding: 0 ${({ theme }) => theme.paddingSize.bigPadding};
   }
 `
 
@@ -21,20 +26,46 @@ export const AboutWrapper = styled.div`
 `
 
 export const TextWrapper = styled.div`
-  font-size: 22px;
   max-width: 800px;
   color: ${({ theme }) => theme.colors.navyBlue};
+  h1 {
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
+    margin: 0;
+  }
   P {
+    font-size: ${({ theme }) => theme.fontSize.l};
     text-align: justify;
     text-justify: inter-word;
   }
   p:nth-of-type(1) {
-    margin-bottom: 50px;
+    margin: ${({ theme }) => theme.marginSize.xxlMargin} 0;
   }
   @media (max-width: 1100px) {
+    h1 {
+      font-size: ${({ theme }) => theme.fontSize.xxl};
+    }
+    p {
+      font-size: ${({ theme }) => theme.fontSize.m};
+    }
     font-size: 18px;
     p:nth-of-type(1) {
-      margin-bottom: 20px;
+      margin: ${({ theme }) => theme.marginSize.bigMargin} 0;
+    }
+  }
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 32px;
+    }
+    p:nth-of-type(1) {
+      margin: ${({ theme }) => theme.marginSize.mediumMargin} 0;
+    }
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: ${({ theme }) => theme.fontSize.xl};
+    }
+    p {
+      font-size: ${({ theme }) => theme.fontSize.s};
     }
   }
 `

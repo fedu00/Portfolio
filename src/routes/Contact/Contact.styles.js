@@ -19,11 +19,10 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   flex-grow: 1;
   h1 {
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
+    margin: 0 0 ${({ theme }) => theme.marginSize.xxlMargin} 0;
   }
   > p {
-    margin: 16px 5px 30px 5px;
     text-align: center;
     font-size: 26px;
     max-width: 500px;
@@ -36,7 +35,26 @@ export const ContentWrapper = styled.div`
     }
   }
 
-  @media (max-width: 380px) {
-    margin: 20px 0;
+  @media (max-width: 1100px) {
+    h1 {
+      font-size: ${({ theme }) => theme.fontSize.xxl};
+    }
+  }
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: ${({ theme }) => theme.fontSize.l};
+    }
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: ${({ theme }) => theme.fontSize.xl};
+      margin: 0 0 ${({ theme }) => theme.marginSize.xlMargin} 0;
+    }
+    p {
+      font-size: ${({ theme }) => theme.fontSize.m};
+    }
   }
 `

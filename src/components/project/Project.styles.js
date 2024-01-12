@@ -7,7 +7,9 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   color: ${({ theme }) => theme.colors.navyBlue};
-  padding-bottom: 20px;
+  @media (max-width: 900px) {
+    padding: 0 ${({ theme }) => theme.paddingSize.mediumPadding};
+  }
   @media (max-width: 800px) {
     flex-direction: column;
   }
@@ -32,33 +34,35 @@ export const ImageWrapper = styled.div`
     img {
       margin: 0 auto;
     }
-  }
-  @media (max-width: 700px) {
-    margin: 0 15px;
+    margin-bottom: ${({ theme }) => theme.marginSize.xlMargin};
   }
 `
 export const ContentWrapper = styled.div`
-  width: 40%;
-  padding: 0 30px;
+  width: 50%;
+  padding: 0 60px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   h1 {
-    margin: 6px 0;
+    margin: 0;
   }
   p {
-    margin: 6px 0;
+    margin: ${({ theme }) => theme.marginSize.mediumMargin} 0;
     text-align: justify;
     text-justify: inter-word;
   }
-  @media (max-width: 1300px) {
-    width: 50%;
-  }
   @media (max-width: 800px) {
     width: 90%;
+    padding: 30px;
   }
   @media (max-width: 700px) {
     margin: 0 10px;
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: ${({ theme }) => theme.fontSize.l};
+    }
+    padding: 0 ${({ theme }) => theme.paddingSize.mediumPadding};
   }
   @media (max-width: 400px) {
     width: 95%;
@@ -68,10 +72,10 @@ export const ContentWrapper = styled.div`
 export const StackContainer = styled.ul`
   padding: 0;
   text-align: center;
-  margin: 10px;
+  margin: 0;
   li {
     display: inline;
-    margin: 5px;
+    margin-right: ${({ theme }) => theme.marginSize.smallMargin};
     font-weight: bold;
   }
   @media (max-width: 500px) {
@@ -88,4 +92,8 @@ export const LinksContainer = styled.div`
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  button {
+    margin: ${({ theme }) => theme.marginSize.bigMargin}
+      ${({ theme }) => theme.marginSize.smallMargin} 0 0;
+  }
 `

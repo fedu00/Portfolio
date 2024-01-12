@@ -5,15 +5,29 @@ export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  > h2 {
+  > h1 {
     color: ${({ theme }) => theme.colors.navyBlue};
-    font-size: 50px;
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
+    margin: 0 0 ${({ theme }) => theme.marginSize.xxlMargin} 0;
+  }
+  @media (max-width: 1100px) {
+    > h1 {
+      font-size: ${({ theme }) => theme.fontSize.xxl};
+    }
   }
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
-    > h2 {
-      margin-left: 0;
+  }
+  @media (max-width: 800px) {
+    > h1 {
+      font-size: 32px;
+    }
+  }
+  @media (max-width: 600px) {
+    > h1 {
+      font-size: ${({ theme }) => theme.fontSize.xl};
+      margin: 0 0 ${({ theme }) => theme.marginSize.xlMargin} 0;
     }
   }
 `
