@@ -63,7 +63,6 @@ export const TextWrapper = styled.div`
       font-size: 32px;
     }
     div {
-      padding-left: ${({ theme }) => theme.paddingSize.smallPadding};
       p:nth-of-type(1) {
         min-width: 165px;
         margin-right: ${({ theme }) => theme.marginSize.mediumMargin};
@@ -77,28 +76,41 @@ export const TextWrapper = styled.div`
       margin: 0 0 ${({ theme }) => theme.marginSize.xlMargin} 0;
     }
     div {
+      display: flex;
+      flex-direction: column;
       p {
         font-size: ${({ theme }) => theme.fontSize.s};
       }
-    }
-
-    div {
       p:nth-of-type(1) {
-        min-width: 130px;
+        margin: 0;
       }
+    }
+    div:first-of-type {
+      p:nth-of-type(2) {
+        margin: 0 0 ${({ theme }) => theme.marginSize.bigMargin} 0;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    div {
+      padding-left: ${({ theme }) => theme.paddingSize.smallPadding};
     }
   }
 `
 
 export const ExperienceWrapper = styled.div`
   min-width: 500px;
-  max-height: ${({ dropDownExperience }) => (dropDownExperience ? "2000px" : "0")};
-  overflow: hidden;
-  transition: 1s;
   @media (max-width: 800px) {
     min-width: 350px;
   }
   @media (max-width: 500px) {
     min-width: 250px;
   }
+`
+
+export const ExperienceContainer = styled.div`
+  transition: 1s;
+  overflow: hidden;
+  max-height: ${({ dropDownExperience, experienceConteinterHeight }) =>
+    dropDownExperience ? `${experienceConteinterHeight}px` : "0"};
 `
