@@ -12,9 +12,18 @@ const ExperienceItem = ({ date, title, aboutProject, role, technologies }) => {
         <p>{title}</p>
       </Title>
       <ContentWrapper>
-        <p>{aboutProject}</p>
-        <p>{role}</p>
-        <p>{technologies}</p>
+        <p>
+          <span>About project:</span>
+          {aboutProject}
+        </p>
+        <p>
+          <span>My role:</span>
+          {role}
+        </p>
+        <p>
+          <span>Tech:</span>
+          {technologies}
+        </p>
       </ContentWrapper>
     </ExperienceItemWrapper>
   )

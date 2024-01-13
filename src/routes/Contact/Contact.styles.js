@@ -5,6 +5,10 @@ export const SectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   color: ${({ theme }) => theme.colors.navyBlue};
+  margin-top: ${({ theme }) => theme.marginSize.containerBigMargin};
+  @media (max-width: 1000px) {
+    margin-top: ${({ theme }) => theme.marginSize.containerMargin};
+  }
   @media (max-width: 600px) {
     min-height: auto;
   }

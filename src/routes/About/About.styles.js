@@ -5,11 +5,12 @@ export const SectionWrapper = styled.div`
   @media (max-width: 1400px) {
     margin-top: ${({ theme }) => theme.marginSize.sectionMargin};
   }
-  @media (max-width: 1200px) {
-    padding: 0 50px;
-  }
+
   @media (max-width: 1000px) {
     margin-top: ${({ theme }) => theme.marginSize.containerBigMargin};
+  }
+  @media (max-width: 900px) {
+    padding: 0 50px;
   }
   @media (max-width: 600px) {
     margin-top: ${({ theme }) => theme.marginSize.containerMargin};
