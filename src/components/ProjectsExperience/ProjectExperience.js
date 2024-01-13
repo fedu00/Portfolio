@@ -20,13 +20,10 @@ const ProjectExperience = ({
   const [experienceConteinterHeight, setExperienceContainerHeight] = useState(0)
   const experienceContainerRef = useRef(null)
 
+  const handleExperienceWrapperHeight = () => {
+    setExperienceContainerHeight(experienceContainerRef.current.offsetHeight)
+  }
   useEffect(() => {
-    setExperienceContainerHeight(experienceContainerRef.current.clientHeight)
-  }, [])
-  useEffect(() => {
-    const handleExperienceWrapperHeight = () => {
-      setExperienceContainerHeight(experienceContainerRef.current.clientHeight)
-    }
     window.addEventListener("resize", handleExperienceWrapperHeight)
     return () => {
       window.removeEventListener("resize", handleExperienceWrapperHeight)
@@ -66,7 +63,10 @@ const ProjectExperience = ({
       <CustomButton
         buttonMinWidth={"210px"}
         text="SHOW MY WORK"
-        onClick={() => setDropDownExperience(!dropDownExperience)}
+        onClick={() => {
+          handleExperienceWrapperHeight()
+          setDropDownExperience(!dropDownExperience)
+        }}
       />
       <ExperienceContainer
         dropDownExperience={dropDownExperience}
