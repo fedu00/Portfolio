@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.js": "/wojtekfedak.portfolio/static/js/main.8c17a88c.js",
+    "main.js": "/wojtekfedak.portfolio/static/js/main.29803bc8.js",
     "static/js/787.28cb0dcd.chunk.js": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/Wojciech Fedak CV.pdf": "/wojtekfedak.portfolio/static/media/Wojciech Fedak CV.08c0f64621b1d5a736d4.pdf",
     "static/media/aboutMyPicture.png": "/wojtekfedak.portfolio/static/media/aboutMyPicture.617c1f1f58834a3cc271.png",
     "static/media/mySecondPicture.png": "/wojtekfedak.portfolio/static/media/mySecondPicture.1a7731de79494fad0908.png",
+    "static/media/sass.svg": "/wojtekfedak.portfolio/static/media/sass.9d67f2d44168071c727663a4e3694d3b.svg",
+    "static/media/reactNative.svg": "/wojtekfedak.portfolio/static/media/reactNative.4bee3ec14ceb3f70f3b3fa3b300bd781.svg",
     "static/media/react.svg": "/wojtekfedak.portfolio/static/media/react.b5ddcdc54cb6c1df44051af358a4ee68.svg",
     "static/media/githubSVG.svg": "/wojtekfedak.portfolio/static/media/githubSVG.f68ad59e379a7847dff2e5d2ff5dee43.svg",
-    "static/media/html.svg": "/wojtekfedak.portfolio/static/media/html.081b2e3a3d306f498c6842c8d49042cd.svg",
+    "static/media/emailIcon.svg": "/wojtekfedak.portfolio/static/media/emailIcon.b66671765202d63ecc8a4070cdcc0d7e.svg",
+    "static/media/html.svg": "/wojtekfedak.portfolio/static/media/html.059b3fe1f74d24d49aa626f4610e74dc.svg",
     "static/media/figma.svg": "/wojtekfedak.portfolio/static/media/figma.42d196c9bc823f3349bb1a1f5f26d2e5.svg",
     "static/media/linkedinSVG.svg": "/wojtekfedak.portfolio/static/media/linkedinSVG.23d0612a86c6ea9e5324a9629506b277.svg",
+    "static/media/backgroundSVG.svg": "/wojtekfedak.portfolio/static/media/backgroundSVG.3d666fdc4b7c699edf08502e2b37efb3.svg",
     "static/media/instaSVG.svg": "/wojtekfedak.portfolio/static/media/instaSVG.3219072ac506345391151f58b9e75ee6.svg",
     "index.html": "/wojtekfedak.portfolio/index.html",
     "static/media/facebookSVG.svg": "/wojtekfedak.portfolio/static/media/facebookSVG.07ef4778cf709a5b7d77c513d6aece99.svg",
-    "static/media/websiteSVG.svg": "/wojtekfedak.portfolio/static/media/websiteSVG.268413014abab3a0009e4e3ff1a5e104.svg",
+    "static/media/websiteSVG.svg": "/wojtekfedak.portfolio/static/media/websiteSVG.dd558eb50d27f956096b599b26a5eb4e.svg",
     "static/media/googlePlaySVG.svg": "/wojtekfedak.portfolio/static/media/googlePlaySVG.df1e1b33187bea8a0f7a8ac2f90d78e9.svg",
     "static/media/JS.svg": "/wojtekfedak.portfolio/static/media/JS.60c4cd4862c5873d521a0944122aaa9e.svg",
+    "static/media/downloadIcon.svg": "/wojtekfedak.portfolio/static/media/downloadIcon.59838e7c38b7d0c988609a6a49af59b6.svg",
     "static/media/css.svg": "/wojtekfedak.portfolio/static/media/css.528f38aab67ac26bf7e26e1e5bfed7a6.svg",
     "static/media/TS.svg": "/wojtekfedak.portfolio/static/media/TS.cd48cd104062e626f5bfa29143a30bd5.svg",
-    "main.8c17a88c.js.map": "/wojtekfedak.portfolio/static/js/main.8c17a88c.js.map",
+    "main.29803bc8.js.map": "/wojtekfedak.portfolio/static/js/main.29803bc8.js.map",
     "787.28cb0dcd.chunk.js.map": "/wojtekfedak.portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.8c17a88c.js"
+    "static/js/main.29803bc8.js"
   ]
 }
