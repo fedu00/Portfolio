@@ -1,4 +1,4 @@
-import { Wrapper } from "./SvgElement.styles"
+import { Wrapper } from "./SvgElement.styled"
 
 const SvgElement = ({ svg, title }) => {
   return (

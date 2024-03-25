@@ -1,13 +1,12 @@
-import Navbar from "./components/navbar/Navbar"
+import Navbar from "./components/Navbar/Navbar"
 import SocialNavBar from "components/SocialNavBar/SocialNavBar"
 import Home from "./routes/Home/Home"
 import About from "./routes/About/About"
 import Contact from "./routes/Contact/Contact"
 import Projects from "./routes/Projects/Projects"
-import { GloballStyle } from "assetes/styles/GloballStyles"
+import { GloballStyle } from "assetes/styles/globalStyles"
 import { theme } from "assetes/styles/theme"
 import { ThemeProvider } from "styled-components"
-import { Wrapper } from "App.styles"
 import { useRef } from "react"
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GloballStyle />
-      <Wrapper>
+      <div>
         <Navbar
           toggleScrollToSection={toggleScrollToSection}
           homeRef={homeRef}
@@ -44,7 +43,7 @@ function App() {
           aboutRef={aboutRef}
           projectsRef={projectsRef}
         />
-      </Wrapper>
+      </div>
     </ThemeProvider>
   )
 }

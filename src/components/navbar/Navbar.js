@@ -2,7 +2,7 @@ import {
   MenuWrapper,
   HamburgerMenu,
   MenuBackground,
-} from "components/navbar/NavBar.styles"
+} from "components/Navbar/NavBar.styled"
 
 import { useRef, useState, useEffect } from "react"
 

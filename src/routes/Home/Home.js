@@ -1,4 +1,4 @@
-import { SectionWrapper, TextWrapper, MyImageWrapper } from "routes/Home/Home.styles"
+import { SectionWrapper, TextWrapper, MyImageWrapper } from "routes/Home/Home.styled"
 
 import { ReactComponent as BackgroundSVG } from "../../assetes/svgIcons/backgroundIcon/backgroundSVG.svg"
 import myImage from "../../assetes/pictures/aboutMyPicture.png"

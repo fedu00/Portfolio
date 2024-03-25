@@ -5,7 +5,7 @@ import {
   TextWrapper,
   ExperienceWrapper,
   ExperienceContainer,
-} from "./ProjectExperience.styles"
+} from "./ProjectExperience.styled"
 import ExperienceItem from "components/ExperienceItem/ExperienceItem"
 import CustomButton from "components/CustomButton/CustomButton"
 import { ReactComponent as DownloadSVG } from "assetes/svgIcons/downloadIcon.svg"

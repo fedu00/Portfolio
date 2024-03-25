@@ -7,7 +7,7 @@ import { ReactComponent as ReactSVG } from "assetes/svgIcons/stackIcons/react.sv
 import { ReactComponent as ReactNativeSVG } from "assetes/svgIcons/stackIcons/reactNative.svg"
 import { ReactComponent as FigmaSVG } from "assetes/svgIcons/stackIcons/figma.svg"
 import { ReactComponent as SassSVG } from "assetes/svgIcons/stackIcons/sass.svg"
-import { Wrapper, SvgsWrapper } from "./ProjectsStack.styles"
+import { Wrapper, SvgsWrapper } from "./ProjectsStack.styled"
 
 const ProjectsStack = () => {
   return (

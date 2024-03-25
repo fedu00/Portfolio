@@ -1,4 +1,4 @@
-import { LinkWrapper } from "./ProjectLink.styles"
+import { LinkWrapper } from "./ProjectLink.styled"
 
 const StackLink = ({ adress, icon, text }) => {
   return (

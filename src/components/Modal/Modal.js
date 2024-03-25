@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import ReactDOM from "react-dom"
-import { BacgroundShadow, PopUpWrapper } from "./Modal.styles"
+import { BacgroundShadow, PopUpWrapper } from "./Modal.styled"
 import CustomButton from "components/CustomButton/CustomButton"
 
 const modalContainer = document.getElementById("modal-container")

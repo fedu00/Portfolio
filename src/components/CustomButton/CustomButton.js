@@ -1,4 +1,4 @@
-import { ButtonWrapper } from "./CustomButton.styles"
+import { ButtonWrapper } from "./CustomButton.styled"
 
 const CustomButton = ({
   icon,
