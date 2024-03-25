@@ -1,5 +1,5 @@
 import React from "react"
-import { SectionWrapper, ContentWrapper } from "routes/Contact/Contact.styles"
+import { SectionWrapper, ContentWrapper } from "routes/Contact/Contact.styled"
 import useModal from "components/Modal/useModal"
 import Footer from "components/Footer/Footer"
 import CustomButton from "components/CustomButton/CustomButton"

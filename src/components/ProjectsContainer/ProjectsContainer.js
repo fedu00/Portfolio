@@ -1,5 +1,5 @@
-import Project from "../../components/project/Project"
-import { Wrapper, ProjectsWrapper } from "./ProjectsContainer.styles"
+import Project from "../Project/Project"
+import { Wrapper, ProjectsWrapper } from "./ProjectsContainer.styled"
 
 const ProjectsContainer = ({ projects }) => {
   return (

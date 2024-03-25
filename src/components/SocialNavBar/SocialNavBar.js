@@ -1,5 +1,5 @@
 import React from "react"
-import { SocialNavBarContainer } from "./SocialNavBar.styles"
+import { SocialNavBarContainer } from "./SocialNavBar.styled"
 import { ReactComponent as GithubSvg } from "../../assetes/svgIcons/githubSVG.svg"
 import { ReactComponent as FacebookSvg } from "../../assetes/svgIcons/facebookSVG.svg"
 import { ReactComponent as InstaSvg } from "../../assetes/svgIcons/instaSVG.svg"

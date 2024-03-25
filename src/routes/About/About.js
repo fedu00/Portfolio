@@ -6,7 +6,7 @@ import {
   AboutWrapper,
   TextWrapper,
   MyImageWrapper,
-} from "routes/About/About.styles"
+} from "routes/About/About.styled"
 import ProjectsStack from "components/ProjectsStack/ProjectsStack"
 import ProjectExperience from "components/ProjectsExperience/ProjectExperience"
 

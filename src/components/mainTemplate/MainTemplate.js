@@ -1,6 +1,5 @@
-import { MainTemplateWrapper } from "./MainTemplate.styles"
-import Navbar from "components/navbar/Navbar"
-// import SocialMediaBar from "components/socialMediaBar/SocialMediaBar"
+import { MainTemplateWrapper } from "./MainTemplate.styled"
+import Navbar from "components/Navbar/Navbar"
 
 const MainTemplate = ({ children }) => {
   return (

@@ -2,7 +2,7 @@ import {
   ExperienceItemWrapper,
   Title,
   ContentWrapper,
-} from "./ExperienceItem.styles"
+} from "./ExperienceItem.styled"
 
 const ExperienceItem = ({ date, title, aboutProject, role, technologies }) => {
   return (

@@ -3,7 +3,7 @@ import {
   FooterContent,
   FooterIcons,
   FooterMenu,
-} from "./Footer.styles"
+} from "./Footer.styled"
 
 import { ReactComponent as GithubSvg } from "../../assetes/svgIcons/githubSVG.svg"
 import { ReactComponent as FacebookSvg } from "../../assetes/svgIcons/facebookSVG.svg"

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { SectionWrapper } from "routes/Projects/Projects.styles"
+import { SectionWrapper } from "routes/Projects/Projects.styled"
 import axios from "axios"
 import ProjectsContainer from "components/ProjectsContainer/ProjectsContainer"
 const API_TOKEN = "1ab3a70712337882e49d01c85666d9"
