@@ -6,7 +6,9 @@ import { ReactComponent as TsSVG } from "assetes/svgIcons/stackIcons/TS.svg"
 import { ReactComponent as ReactSVG } from "assetes/svgIcons/stackIcons/react.svg"
 import { ReactComponent as ReactNativeSVG } from "assetes/svgIcons/stackIcons/reactNative.svg"
 import { ReactComponent as FigmaSVG } from "assetes/svgIcons/stackIcons/figma.svg"
-import { ReactComponent as SassSVG } from "assetes/svgIcons/stackIcons/sass.svg"
+import { ReactComponent as NextJSSVG } from "assetes/svgIcons/stackIcons/nextJs.svg"
+import { ReactComponent as JestSVG } from "assetes/svgIcons/stackIcons/jest.svg"
+import { ReactComponent as ReactTestingLibrrarySVG } from "assetes/svgIcons/stackIcons/reactTestingLibrary.svg"
 import { Wrapper, SvgsWrapper } from "./ProjectsStack.styled"
 
 const ProjectsStack = () => {
@@ -20,8 +22,16 @@ const ProjectsStack = () => {
         <SvgElement svg={<ReactNativeSVG />} title={"React Native"} />
         <SvgElement svg={<HtmlSVG />} title={"HTML5"} />
         <SvgElement svg={<CssSVG />} title={"CSS"} />
-        <SvgElement svg={<SassSVG />} title={"Sass"} />
         <SvgElement svg={<FigmaSVG />} title={"Figma & Art"} />
+      </SvgsWrapper>
+      <h1>Already learning</h1>
+      <SvgsWrapper>
+        <SvgElement svg={<NextJSSVG />} title={"Next.js"} />
+        <SvgElement svg={<JestSVG />} title={"Jest"} />
+        <SvgElement
+          svg={<ReactTestingLibrrarySVG />}
+          title={"React Testing Library"}
+        />
       </SvgsWrapper>
     </Wrapper>
   )
