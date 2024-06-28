@@ -40,7 +40,13 @@ const ProjectExperience = ({
         />
       ) : null}
       <TextWrapper>
-        <h1>Where I've worked?</h1>
+        <h1>Experience</h1>
+        <div>
+          <p>
+            <span>09.2023-11.2023</span>
+          </p>
+          <p> Freelance - project Stress First Aid</p>
+        </div>
         <div>
           <p>
             <span>10.2021-09.2022</span>
