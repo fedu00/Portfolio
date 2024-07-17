@@ -26,6 +26,7 @@ export const FooterContent = styled.div`
 export const FooterIcons = styled.div`
   a {
     svg {
+      transition: all 0.4s linear;
       height: 30px;
       fill: ${({ theme }) => theme.colors.backgroundColor};
       margin: 10px;
@@ -33,6 +34,11 @@ export const FooterIcons = styled.div`
         height: 25px;
         margin: 5px;
       }
+    }
+  }
+  a:hover {
+    svg {
+      scale: 1.2;
     }
   }
 `
